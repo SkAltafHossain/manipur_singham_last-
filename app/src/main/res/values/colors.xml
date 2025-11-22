@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom colors -->
+    <color name="colorActionBar">#FFa11d54</color>
+    <color name="colorNavigationBar">#FF6e1339</color>
+    <color name="colorBottomNavigation">#f7c1d1</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#FFa11d54</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="appGreen">#41FF00</color>
+
+    <!-- Material Design colors -->
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>
