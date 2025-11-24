@@ -1,21 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.kerala.lastkerala.ui.home.viewmodel.HomeViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.home.HomeFragment">
+        android:background="@color/white"
+        android:fillViewport="true">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16sdp"
+            tools:context=".ui.home.HomeFragment">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Logo and App Name -->
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_12sdp"/>
+
+
+            <TextView
+                android:id="@+id/appNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kerala_lottery"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/logoImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_6sdp"/>
+
+
+            <TextView
+                android:id="@+id/appDescriptionText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/check_latest_lottery_results_and_number_combinations"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_24sdp"
+                app:layout_constraintTop_toBottomOf="@id/appNameText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_6sdp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardsContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appDescriptionText">
+
+
+                <!-- Card 1: Top Left -->
+                <include
+                    android:id="@+id/cardFirstPrizeJodi"
+                    layout="@layout/item_card"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_113sdp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    app:cardTitle="@{@string/first_prize_jodi}"
+                    app:cardIcon="@{@drawable/ic_prize}"
+                    app:viewModelData="@{viewModel}"
+                    app:cardType='@{"LastJodiNumber"}'
+                    app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <!-- Card 2: Top Right -->
+                <include
+                    android:id="@+id/cardFirstPrizeSingle"
+                    layout="@layout/item_card"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_113sdp"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    app:cardTitle="@{@string/first_prize_single}"
+                    app:cardIcon="@{@drawable/ic_medal}"
+                    app:viewModelData="@{viewModel}"
+                    app:cardType='@{"LastNumber"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <!-- Card 3: Bottom Left -->
+                <include
+                    android:id="@+id/cardNumberCombination"
+                    layout="@layout/item_card"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_113sdp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:cardTitle="@{@string/number_combination}"
+                    app:cardIcon="@{@drawable/ic_combination}"
+                    app:viewModelData="@{viewModel}"
+                    app:cardType='@{"NumberCombination"}'
+                    app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardFirstPrizeJodi" />
+
+
+                <!-- Card 4: Bottom Right -->
+                <include
+                    android:id="@+id/cardShowResult"
+                    layout="@layout/item_card"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_113sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    app:cardTitle="@{@string/show_result}"
+                    app:cardIcon="@{@drawable/ic_result}"
+                    app:viewModelData="@{viewModel}"
+                    app:cardType='@{"ShowResult"}'
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+                    app:layout_constraintTop_toBottomOf="@id/cardFirstPrizeSingle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/cardShowResult"/>
+                <!-- Vertical guideline for center spacing -->
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineVertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- Share Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginHorizontal="@dimen/_32sdp"
+                android:drawablePadding="@dimen/_6sdp"
+                android:drawableStart="@drawable/ic_share"
+                android:paddingVertical="@dimen/_9sdp"
+                android:text="@string/share_app"
+                android:textAllCaps="false"
+                android:onClick='@{() -> viewModel.onShareAppClick()}'
+                android:textColor="@color/purple_700"
+                app:iconTint="@color/purple_700"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardsContainer"
+                app:strokeColor="@color/purple_700"
+                app:strokeWidth="@dimen/_1sdp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 </layout>

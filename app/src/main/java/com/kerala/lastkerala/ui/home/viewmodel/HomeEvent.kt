@@ -1,7 +1,12 @@
 package com.kerala.lastkerala.ui.home.viewmodel
 
 
-// Sealed class for one-time events in Home screen
 sealed class HomeEvent {
     object Empty : HomeEvent()
+    object LastJodiNumberClick : HomeEvent()
+    object LastNumberClick : HomeEvent()
+    object NumberCombinationClick : HomeEvent()
+    object ShowResultClick : HomeEvent()
+    object ShareAppClick : HomeEvent()
 }
+

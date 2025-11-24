@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Last Kerala</string>
+    <string name="kerala_lottery">Kerala Lottery</string>
+    <string name="check_latest_lottery_results_and_number_combinations">Check latest lottery results and number combinations</string>
+    <string name="share_app">Share App</string>
+    <!-- Home Screen -->
+    <string name="first_prize_jodi">First Prize Last Jodi Number</string>
+    <string name="first_prize_single">First Prize Last Number</string>
+    <string name="number_combination">Number Combination</string>
+    <string name="show_result">Show Result</string>
+
+    <!-- App Description -->
+    <string name="app_description">Check latest lottery results and number combinations</string>
+    
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

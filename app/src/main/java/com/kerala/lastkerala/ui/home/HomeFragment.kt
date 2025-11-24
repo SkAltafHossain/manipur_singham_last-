@@ -9,17 +9,28 @@ import com.kerala.lastkerala.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 import com.kerala.lastkerala.ui.home.viewmodel.HomeViewModel
 
+
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
+
     override fun getViewModelClass(): Class<HomeViewModel> = HomeViewModel::class.java
 
-    override fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): FragmentHomeBinding = FragmentHomeBinding.inflate(inflater, container, false)
+
+    override fun getViewBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ): FragmentHomeBinding = FragmentHomeBinding.inflate(inflater, container, false)
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Add any additional setup here
+
+        // Set up data binding
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
+
     }
-    
+
     override fun onDestroyView() {
         super.onDestroyView()
         viewModel.clearEvent()
