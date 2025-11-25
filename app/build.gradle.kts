@@ -22,7 +22,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "IMAGE_URL", "\"https://drive.google.com/uc?id=\"")
-        buildConfigField("String", "BASE_URL", "\"https://mole-maximum-fawn.ngrok-free.app/api/\"")
+        buildConfigField("String", "BASE_URL", "\"https://harianastatelottery.com/api/\"")
     }
 
     buildTypes {

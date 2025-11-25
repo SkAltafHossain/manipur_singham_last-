@@ -1,5 +1,7 @@
 package com.kerala.lastkerala.data.remote.api
 
-interface DataSource {
+import com.kerala.lastkerala.data.remote.model.FirstPrizeJodiResponse
 
+interface DataSource {
+    suspend fun getFirstPrizeJodi(): FirstPrizeJodiResponse
 }

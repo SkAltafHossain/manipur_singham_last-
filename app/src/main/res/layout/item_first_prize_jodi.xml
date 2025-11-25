@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.kerala.lastkerala.domain.model.FirstPrizeJodi" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- Date Header -->
+        <TextView
+            android:id="@+id/headerDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{item.date}"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/_4sdp"
+            android:background="@drawable/box_drawable"
+            app:layout_constraintEnd_toStartOf="@+id/header1130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.24" />
+
+        <!-- 11:30 Header -->
+        <TextView
+            android:id="@+id/header1130"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:text="@{item.time1130}"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/box_drawable"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/headerDate"
+            app:layout_constraintEnd_toStartOf="@+id/header1500"
+            app:layout_constraintStart_toEndOf="@id/headerDate"
+            app:layout_constraintTop_toTopOf="@+id/headerDate"
+            app:layout_constraintWidth_percent="0.19" />
+
+        <!-- 3:00 Header -->
+        <TextView
+            android:id="@+id/header1500"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:text="@{item.time1500}"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/box_drawable"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/headerDate"
+            app:layout_constraintEnd_toStartOf="@+id/header1700"
+            app:layout_constraintStart_toEndOf="@id/header1130"
+            app:layout_constraintTop_toTopOf="@+id/headerDate"
+            app:layout_constraintWidth_percent="0.19" />
+
+        <!-- 5:00 Header -->
+        <TextView
+            android:id="@+id/header1700"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:text="@{item.time1700}"
+            android:background="@drawable/box_drawable"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/headerDate"
+            app:layout_constraintEnd_toStartOf="@+id/header2030"
+            app:layout_constraintStart_toEndOf="@id/header1500"
+            app:layout_constraintTop_toTopOf="@+id/headerDate"
+            app:layout_constraintWidth_percent="0.19" />
+
+        <!-- 8:30 Header -->
+        <TextView
+            android:id="@+id/header2030"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:text="@{item.time2030}"
+            android:background="@drawable/box_drawable"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/headerDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header1700"
+            app:layout_constraintTop_toTopOf="@+id/headerDate"
+            app:layout_constraintWidth_percent="0.19" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
