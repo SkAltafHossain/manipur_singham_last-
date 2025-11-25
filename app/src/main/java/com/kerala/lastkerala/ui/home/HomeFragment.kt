@@ -1,13 +1,21 @@
 package com.kerala.lastkerala.ui.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import com.kerala.lastkerala.R
 import com.kerala.lastkerala.common.base.BaseFragment
+import com.kerala.lastkerala.common.extension.navigateWithAnimation
+import com.kerala.lastkerala.common.extension.shareApp
 import com.kerala.lastkerala.databinding.FragmentHomeBinding
+import com.kerala.lastkerala.ui.home.viewmodel.HomeEvent
 import dagger.hilt.android.AndroidEntryPoint
 import com.kerala.lastkerala.ui.home.viewmodel.HomeViewModel
+import kotlinx.coroutines.launch
 
 
 @AndroidEntryPoint
@@ -25,10 +33,41 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Log.d("TAG", "onViewCreated: ")
         // Set up data binding
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
+        binding.executePendingBindings()
 
+    }
+
+    override fun setupObservers() {
+        super.setupObservers()
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.uiEvent.collect { event ->
+                when (event) {
+                    is HomeEvent.LastJodiNumberClick -> {
+                        findNavController().navigateWithAnimation(R.id.lastJodiNumberFragment)
+                    }
+                    is HomeEvent.LastNumberClick -> {
+                        findNavController().navigateWithAnimation(R.id.lastNumberFragment)
+                    }
+                    is HomeEvent.NumberCombinationClick -> {
+                        findNavController().navigateWithAnimation(R.id.numberCombinationFragment)
+                    }
+                    is HomeEvent.ShowResultClick -> {
+                        findNavController().navigateWithAnimation(R.id.showResultFragment)
+                    }
+                    is HomeEvent.ShareAppClick -> {
+                        requireContext().shareApp()
+                    }
+                    is HomeEvent.Empty -> {
+                        // No action needed for Empty event
+                    }
+                }
+            }
+        }
     }
 
     override fun onDestroyView() {

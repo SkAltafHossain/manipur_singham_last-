@@ -1,6 +1,7 @@
 package com.kerala.lastkerala.ui.home.viewmodel
 
 
+import android.util.Log
 import com.kerala.lastkerala.common.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -21,6 +22,7 @@ class HomeViewModel @Inject constructor(
     val uiEvent: StateFlow<HomeEvent> = _uiEvent
 
     fun onCardClick(cardType: String) {
+        Log.d("TAG", "onCardClick: $cardType")
         when (cardType) {
             "LastJodiNumber" -> _uiEvent.value = HomeEvent.LastJodiNumberClick
             "LastNumber" -> _uiEvent.value = HomeEvent.LastNumberClick
