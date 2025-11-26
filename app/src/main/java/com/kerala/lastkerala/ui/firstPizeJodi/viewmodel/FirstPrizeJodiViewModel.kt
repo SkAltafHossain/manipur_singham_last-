@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.kerala.lastkerala.common.base.BaseViewModel
 import com.kerala.lastkerala.common.extension.toSimpleJson
 import com.kerala.lastkerala.common.result.NetworkResult
-import com.kerala.lastkerala.domain.usecase.FirstPrizeJodiUseCase
+import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

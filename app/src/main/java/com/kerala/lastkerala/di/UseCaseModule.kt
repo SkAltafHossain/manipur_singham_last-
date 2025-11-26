@@ -1,7 +1,9 @@
 package com.kerala.lastkerala.di
 
-import com.kerala.lastkerala.domain.usecase.FirstPrizeJodiUseCase
-import com.kerala.lastkerala.domain.usecase.FirstPrizeJodiUseCaseImpl
+import com.kerala.lastkerala.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCase
+import com.kerala.lastkerala.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCaseImpl
+import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
+import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -19,4 +21,10 @@ interface UseCaseModule {
     fun bindFirstPrizeJodiUseCase(
         impl: FirstPrizeJodiUseCaseImpl
     ): FirstPrizeJodiUseCase
+
+    @Binds
+    @Singleton
+    fun bindFirstPrizeFirstUseCase(
+        impl: FirstPrizeFirstUseCaseImpl
+    ): FirstPrizeFirstUseCase
 }

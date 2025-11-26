@@ -1,11 +1,8 @@
-package com.kerala.lastkerala.domain.usecase
+package com.kerala.lastkerala.domain.usecase.firstPrizeJodi
 
 import com.kerala.lastkerala.common.result.NetworkResult
 import com.kerala.lastkerala.domain.model.FirstPrizeJodi
 import com.kerala.lastkerala.domain.repository.FirstPrizeJodiRepository
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 import javax.inject.Singleton
 

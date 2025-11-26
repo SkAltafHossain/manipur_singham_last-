@@ -8,6 +8,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.kerala.lastkerala.R
 import com.kerala.lastkerala.common.base.BaseFragment
 import com.kerala.lastkerala.common.extension.showErrorSnackBar
 import com.kerala.lastkerala.databinding.FragmentFirstPrizeJodiBinding
@@ -35,7 +36,6 @@ class FirstPrizeJodiFragment : BaseFragment<FirstPrizeJodiViewModel, FragmentFir
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
         observeViewModel()
-        loadData()
     }
 
     private fun setupRecyclerView() {
@@ -66,13 +66,13 @@ class FirstPrizeJodiFragment : BaseFragment<FirstPrizeJodiViewModel, FragmentFir
                                 binding.progressBar.visibility = View.GONE
                                 binding.recyclerView.visibility = View.GONE
                                 binding.errorView.visibility = View.VISIBLE
-                                showErrorSnackbar(state.message ?: "An error occurred")
+                                showErrorSnackbar(state.message)
                             }
                             FirstPrizeJodiState.Empty -> {
                                 binding.progressBar.visibility = View.GONE
                                 binding.recyclerView.visibility = View.GONE
                                 binding.errorView.visibility = View.VISIBLE
-                                binding.errorText.text = "No data available"
+                                binding.errorText.text = getString(R.string.no_data_available)
                             }
                         }
                     }
@@ -90,10 +90,6 @@ class FirstPrizeJodiFragment : BaseFragment<FirstPrizeJodiViewModel, FragmentFir
                 }
             }
         }
-    }
-
-    private fun loadData() {
-        viewModel.loadFirstPrizeJodi()
     }
 
     private fun showErrorSnackbar(message: String) {

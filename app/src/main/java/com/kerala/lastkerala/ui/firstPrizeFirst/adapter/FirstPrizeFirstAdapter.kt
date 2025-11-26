@@ -1,20 +1,19 @@
-package com.kerala.lastkerala.ui.firstPizeJodi.adapter
+package com.kerala.lastkerala.ui.firstPrizeFirst.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.kerala.lastkerala.databinding.ItemFirstPrizeFirstBinding
 import com.kerala.lastkerala.databinding.ItemFirstPrizeHeaderBinding
-import com.kerala.lastkerala.databinding.ItemFirstPrizeJodiBinding
-import com.kerala.lastkerala.domain.model.FirstPrizeJodi
+import com.kerala.lastkerala.domain.model.FirstPrizeFirst
 
 private const val TYPE_HEADER = 0
 private const val TYPE_ITEM = 1
 
-class FirstPrizeJodiAdapter : 
-    ListAdapter<FirstPrizeJodi, RecyclerView.ViewHolder>(FirstPrizeJodiDiffCallback()) {
+class FirstPrizeFirstAdapter :
+    ListAdapter<FirstPrizeFirst, RecyclerView.ViewHolder>(FirstPrizeFirstDiffCallback()) {
 
     private var showHeader = true
 
@@ -28,7 +27,7 @@ class FirstPrizeJodiAdapter :
                 )
             )
             else -> ItemViewHolder(
-                ItemFirstPrizeJodiBinding.inflate(
+                ItemFirstPrizeFirstBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -58,7 +57,7 @@ class FirstPrizeJodiAdapter :
         return if (showHeader) count + 1 else count
     }
 
-    fun submitList(list: List<FirstPrizeJodi>?, showHeader: Boolean = true) {
+    fun submitList(list: List<FirstPrizeFirst>?, showHeader: Boolean = true) {
         this.showHeader = showHeader && !list.isNullOrEmpty()
         super.submitList(list) {
             // Submit complete callback if needed
@@ -66,10 +65,10 @@ class FirstPrizeJodiAdapter :
     }
 
     class ItemViewHolder(
-        private val binding: ItemFirstPrizeJodiBinding
+        private val binding: ItemFirstPrizeFirstBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: FirstPrizeJodi) {
+        fun bind(item: FirstPrizeFirst) {
             binding.item = item
             binding.executePendingBindings()
         }
@@ -80,12 +79,12 @@ class FirstPrizeJodiAdapter :
     ) : RecyclerView.ViewHolder(binding.root)
 }
 
-private class FirstPrizeJodiDiffCallback : DiffUtil.ItemCallback<FirstPrizeJodi>() {
-    override fun areItemsTheSame(oldItem: FirstPrizeJodi, newItem: FirstPrizeJodi): Boolean {
+private class FirstPrizeFirstDiffCallback : DiffUtil.ItemCallback<FirstPrizeFirst>() {
+    override fun areItemsTheSame(oldItem: FirstPrizeFirst, newItem: FirstPrizeFirst): Boolean {
         return oldItem.date == newItem.date
     }
 
-    override fun areContentsTheSame(oldItem: FirstPrizeJodi, newItem: FirstPrizeJodi): Boolean {
+    override fun areContentsTheSame(oldItem: FirstPrizeFirst, newItem: FirstPrizeFirst): Boolean {
         return oldItem == newItem
     }
 }

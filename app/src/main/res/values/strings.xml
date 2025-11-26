@@ -23,4 +23,6 @@
     <string name="_3_00_pm">3:00 PM</string>
     <string name="_5_00_pm">5:00 PM</string>
     <string name="_8_30_pm">8:30 PM</string>
+    <string name="no_data_available">No data available</string>
+    <string name="an_error_occurred">An error occurred</string>
 </resources>

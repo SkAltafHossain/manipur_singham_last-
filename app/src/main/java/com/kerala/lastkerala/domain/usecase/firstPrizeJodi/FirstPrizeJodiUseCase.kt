@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.domain.usecase
+package com.kerala.lastkerala.domain.usecase.firstPrizeJodi
 
 import com.kerala.lastkerala.common.result.NetworkResult
 import com.kerala.lastkerala.domain.model.FirstPrizeJodi
