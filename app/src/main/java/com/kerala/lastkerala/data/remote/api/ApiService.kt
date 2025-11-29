@@ -2,6 +2,7 @@ package com.kerala.lastkerala.data.remote.api
 
 import com.kerala.lastkerala.data.remote.model.FirstPrizeFirstResponse
 import com.kerala.lastkerala.data.remote.model.FirstPrizeJodiResponse
+import com.kerala.lastkerala.data.remote.model.LatestResultsPdfResponse
 import retrofit2.Response
 import retrofit2.http.GET
 
@@ -12,4 +13,7 @@ interface ApiService {
     
     @GET("first-price-last")
     suspend fun getFirstPrizeFirst(): Response<FirstPrizeFirstResponse>
+    
+    @GET("latest-results-pdf")
+    suspend fun getLatestResultsPdf(): Response<LatestResultsPdfResponse>
 }

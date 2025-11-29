@@ -12,10 +12,6 @@ import com.kerala.lastkerala.R
 import com.kerala.lastkerala.common.base.BaseFragment
 import com.kerala.lastkerala.common.extension.showErrorSnackBar
 import com.kerala.lastkerala.databinding.FragmentFirstPrizeFirstBinding
-import com.kerala.lastkerala.databinding.FragmentHomeBinding
-import com.kerala.lastkerala.ui.firstPizeJodi.adapter.FirstPrizeJodiAdapter
-import com.kerala.lastkerala.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
-import com.kerala.lastkerala.ui.firstPizeJodi.viewmodel.FirstPrizeJodiState
 import com.kerala.lastkerala.ui.firstPrizeFirst.adapter.FirstPrizeFirstAdapter
 import com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstEvent
 import com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstState

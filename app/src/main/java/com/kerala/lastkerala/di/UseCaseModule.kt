@@ -4,6 +4,8 @@ import com.kerala.lastkerala.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCas
 import com.kerala.lastkerala.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCaseImpl
 import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
 import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCaseImpl
+import com.kerala.lastkerala.domain.usecase.latestresultspdf.LatestResultsPdfUseCase
+import com.kerala.lastkerala.domain.usecase.latestresultspdf.LatestResultsPdfUseCaseImpl
 import com.kerala.lastkerala.domain.usecase.numberCombination.NumberCombinationUseCase
 import com.kerala.lastkerala.domain.usecase.numberCombination.NumberCombinationUseCaseImpl
 import dagger.Binds
@@ -35,5 +37,10 @@ interface UseCaseModule {
     fun bindNumberCombinationUseCase(
         impl: NumberCombinationUseCaseImpl
     ): NumberCombinationUseCase
-
+    
+    @Binds
+    @Singleton
+    fun bindLatestResultsPdfUseCase(
+        impl: LatestResultsPdfUseCaseImpl
+    ): LatestResultsPdfUseCase
 }

@@ -21,7 +21,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "IMAGE_URL", "\"https://drive.google.com/uc?id=\"")
+        buildConfigField("String", "PDF_URL", "\"https://harianastatelottery.com/\"")
         buildConfigField("String", "BASE_URL", "\"https://harianastatelottery.com/api/\"")
     }
 

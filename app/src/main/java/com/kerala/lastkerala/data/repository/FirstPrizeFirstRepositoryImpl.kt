@@ -11,7 +11,7 @@ class FirstPrizeFirstRepositoryImpl @Inject constructor(
     private val mapper: FirstPrizeFirstMapper
 ) : FirstPrizeFirstRepository {
 
-    override suspend fun getFirstPrizeFirst(): MutableList<FirstPrizeFirst> {
+    override suspend fun getFirstPrizeFirst(): List<FirstPrizeFirst> {
         val response = remoteDataSource.getFirstPrizeFirst()
         return mapper.mapToDomainList(response.data)
     }
