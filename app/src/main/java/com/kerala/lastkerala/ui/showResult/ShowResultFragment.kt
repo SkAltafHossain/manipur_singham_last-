@@ -4,10 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebChromeClient
-import android.webkit.WebViewClient
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
+import com.github.barteksc.pdfviewer.listener.OnErrorListener
+import com.github.barteksc.pdfviewer.listener.OnPageChangeListener
+import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener
 import com.kerala.lastkerala.common.base.BaseFragment
 import com.kerala.lastkerala.common.extension.showErrorSnackBar
 import com.kerala.lastkerala.databinding.FragmentShowResultBinding
@@ -16,12 +17,19 @@ import com.kerala.lastkerala.ui.showResult.viewmodel.ShowResultEvent
 import com.kerala.lastkerala.ui.showResult.viewmodel.ShowResultState
 import com.kerala.lastkerala.ui.showResult.viewmodel.ShowResultViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
+import java.io.FileOutputStream
+import java.net.URL
 
 @AndroidEntryPoint
 class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultBinding>() {
     
     private var currentPdfIndex = 0
-    private lateinit var pdfUrls: List<String>
+    private var pdfUrls: List<String> = emptyList()
+    private var isDownloading = false
     
     override fun getViewModelClass(): Class<ShowResultViewModel> = ShowResultViewModel::class.java
 
@@ -32,49 +40,63 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupWebView()
         setupClickListeners()
         observeViewModel()
         viewModel.fetchLatestResults()
     }
-
-    private fun setupWebView() {
-        binding.webView.apply {
-            settings.javaScriptEnabled = true
-            settings.loadWithOverviewMode = true
-            settings.useWideViewPort = true
-            settings.builtInZoomControls = true
-            settings.displayZoomControls = false
-            
-            webViewClient = object : WebViewClient() {
-                override fun onPageStarted(view: android.webkit.WebView?, url: String?, favicon: android.graphics.Bitmap?) {
-                    super.onPageStarted(view, url, favicon)
-                    showLoadingPdf(true)
+    
+    private fun loadPdf(url: String) {
+        if (isDownloading) return
+        
+        binding.apply {
+            progressBar.visibility = View.VISIBLE
+            pdfView.visibility = View.GONE
+            tvEmptyView.visibility = View.GONE
+        }
+        
+        isDownloading = true
+        
+        viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
+            try {
+                val input = URL(url).openStream()
+                val tempFile = File(requireContext().cacheDir, "temp_${System.currentTimeMillis()}.pdf")
+                tempFile.outputStream().use { output ->
+                    input.copyTo(output)
                 }
                 
-                override fun onPageFinished(view: android.webkit.WebView?, url: String?) {
-                    super.onPageFinished(view, url)
-                    showLoadingPdf(false)
+                withContext(Dispatchers.Main) {
+                    displayPdf(tempFile)
                 }
-                
-                override fun onReceivedError(
-                    view: android.webkit.WebView?,
-                    request: android.webkit.WebResourceRequest?,
-                    error: android.webkit.WebResourceError?
-                ) {
-                    super.onReceivedError(view, request, error)
-                    showLoadingPdf(false)
-                    showError("Failed to load PDF")
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    showError("Failed to load PDF: ${e.message}")
                 }
+            } finally {
+                isDownloading = false
             }
-            
-            webChromeClient = object : WebChromeClient() {
-                override fun onProgressChanged(view: android.webkit.WebView, newProgress: Int) {
-                    super.onProgressChanged(view, newProgress)
-                    binding.progressBar.progress = newProgress
-                    binding.progressBar.isVisible = newProgress < 100
+        }
+    }
+    
+    private fun displayPdf(pdfFile: File) {
+        try {
+            binding.pdfView.fromFile(pdfFile)
+                .enableSwipe(true)
+                .swipeHorizontal(false)
+                .enableDoubletap(true)
+                .defaultPage(0)
+                .enableAnnotationRendering(false)
+                .spacing(10)
+                .onLoad { nbPages ->
+                    binding.progressBar.visibility = View.GONE
+                    binding.pdfView.visibility = View.VISIBLE
+                    updateNavigationButtons()
                 }
-            }
+                .onError { error ->
+                    showError("Error loading PDF: $error")
+                }
+                .load()
+        } catch (e: Exception) {
+            showError("Error displaying PDF: ${e.message}")
         }
     }
 
@@ -118,13 +140,12 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     }
     
     private fun showPdfList(results: List<LatestResultPdf>) {
-        // Reverse the list to show latest PDF first (assuming results are ordered oldest to newest)
-        pdfUrls = results.map { it.pdfUrl }.reversed()
+        pdfUrls = results.map { it.pdfUrl }
         if (pdfUrls.isNotEmpty()) {
             currentPdfIndex = 0
-            loadCurrentPdf()
+            loadPdf(pdfUrls[currentPdfIndex])
             binding.apply {
-                webView.visibility = View.VISIBLE
+                pdfView.visibility = View.VISIBLE
                 navigationLayout.visibility = View.VISIBLE
                 tvEmptyView.visibility = View.GONE
             }
@@ -136,19 +157,12 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     
     private fun loadCurrentPdf() {
         if (pdfUrls.isNotEmpty() && currentPdfIndex in pdfUrls.indices) {
-            showLoadingPdf(true)
-            val pdfUrl = pdfUrls[currentPdfIndex]
-            // Using Google Docs viewer to display PDF in WebView
-            val pdfUrlWithViewer = "https://docs.google.com/viewer?url=$pdfUrl"
-            binding.webView.loadUrl(pdfUrlWithViewer)
-            updateNavigationButtons()
+            loadPdf(pdfUrls[currentPdfIndex])
         }
     }
     
     private fun showLoadingPdf(isLoading: Boolean) {
         binding.apply {
-            progressPrev.visibility = if (isLoading && currentPdfIndex > 0) View.VISIBLE else View.GONE
-            progressNext.visibility = if (isLoading && currentPdfIndex < pdfUrls.size - 1) View.VISIBLE else View.GONE
             btnPrev.isEnabled = !isLoading && currentPdfIndex > 0
             btnNext.isEnabled = !isLoading && currentPdfIndex < pdfUrls.size - 1
         }
@@ -157,6 +171,7 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     private fun showNextPdf() {
         if (currentPdfIndex < pdfUrls.size - 1) {
             currentPdfIndex++
+            showLoadingPdf(true)
             loadCurrentPdf()
         }
     }
@@ -164,14 +179,15 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     private fun showPreviousPdf() {
         if (currentPdfIndex > 0) {
             currentPdfIndex--
+            showLoadingPdf(true)
             loadCurrentPdf()
         }
     }
     
     private fun updateNavigationButtons() {
         binding.apply {
-            btnPrev.isEnabled = currentPdfIndex > 0
-            btnNext.isEnabled = currentPdfIndex < pdfUrls.size - 1
+            btnPrev.isEnabled = currentPdfIndex > 0 && !isDownloading
+            btnNext.isEnabled = currentPdfIndex < pdfUrls.size - 1 && !isDownloading
         }
     }
     
@@ -185,14 +201,14 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     
     private fun showEmptyView() {
         binding.apply {
-            webView.visibility = View.GONE
+            pdfView.visibility = View.GONE
             navigationLayout.visibility = View.GONE
             tvEmptyView.visibility = View.VISIBLE
         }
     }
 
     override fun onDestroyView() {
-        binding.webView.destroy()
+        binding.pdfView.recycle()
         super.onDestroyView()
         viewModel.clearEvent()
     }
