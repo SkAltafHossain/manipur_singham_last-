@@ -25,4 +25,6 @@
     <string name="_8_30_pm">8:30 PM</string>
     <string name="no_data_available">No data available</string>
     <string name="an_error_occurred">An error occurred</string>
+    <string name="enter_4_digit_number">Enter 4-digit number</string>
+    <string name="search">Search</string>
 </resources>

@@ -5,4 +5,5 @@ package com.kerala.lastkerala.ui.numberCombination.viewmodel
  */
 sealed class NumberCombinationEvent {
     object Empty : NumberCombinationEvent()
+    data class ShowError(val message: String) : NumberCombinationEvent()
 }
