@@ -10,6 +10,8 @@ import com.github.barteksc.pdfviewer.listener.OnErrorListener
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener
 import com.kerala.lastkerala.common.base.BaseFragment
+import com.kerala.lastkerala.common.extension.disable
+import com.kerala.lastkerala.common.extension.enable
 import com.kerala.lastkerala.common.extension.showErrorSnackBar
 import com.kerala.lastkerala.databinding.FragmentShowResultBinding
 import com.kerala.lastkerala.domain.model.LatestResultPdf
@@ -163,20 +165,21 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     
     private fun showLoadingPdf(isLoading: Boolean) {
         binding.apply {
-            btnPrev.isEnabled = !isLoading && currentPdfIndex > 0
-            btnNext.isEnabled = !isLoading && currentPdfIndex < pdfUrls.size - 1
+            if(!isLoading && currentPdfIndex < pdfUrls.size) {
+                btnPrev.enable()
+            } else {
+                btnPrev.disable()
+            }
+
+            if(!isLoading && currentPdfIndex > 0) {
+                btnNext.enable()
+            } else {
+                btnNext.disable()
+            }
         }
     }
     
     private fun showNextPdf() {
-        if (currentPdfIndex < pdfUrls.size - 1) {
-            currentPdfIndex++
-            showLoadingPdf(true)
-            loadCurrentPdf()
-        }
-    }
-    
-    private fun showPreviousPdf() {
         if (currentPdfIndex > 0) {
             currentPdfIndex--
             showLoadingPdf(true)
@@ -184,10 +187,26 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
         }
     }
     
+    private fun showPreviousPdf() {
+        if (currentPdfIndex < pdfUrls.size - 1) {
+            currentPdfIndex++
+            showLoadingPdf(true)
+            loadCurrentPdf()
+        }
+    }
+    
     private fun updateNavigationButtons() {
         binding.apply {
-            btnPrev.isEnabled = currentPdfIndex > 0 && !isDownloading
-            btnNext.isEnabled = currentPdfIndex < pdfUrls.size - 1 && !isDownloading
+            if(currentPdfIndex < pdfUrls.size - 1 && !isDownloading) {
+                btnPrev.enable()
+            } else {
+                btnPrev.disable()
+            }
+            if(currentPdfIndex > 0 && !isDownloading) {
+                btnNext.enable()
+            } else {
+                btnNext.disable()
+            }
         }
     }
     
