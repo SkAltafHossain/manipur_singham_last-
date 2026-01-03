@@ -48,16 +48,76 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel, FragmentShowResultB
     }
     
     private fun loadPdf(url: String) {
+        if (url.isBlank()) {
+            showErrorSnackBar("Invalid PDF URL")
+            return
+        }
+        
         if (isDownloading) return
+        isDownloading = true
         
         binding.apply {
             progressBar.visibility = View.VISIBLE
             pdfView.visibility = View.GONE
             tvEmptyView.visibility = View.GONE
         }
-        
-        isDownloading = true
-        
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            try {
+                // Download the PDF file
+                val file = withContext(Dispatchers.IO) {
+                    val urlConnection = URL(url).openConnection()
+                    urlConnection.connect()
+                    
+                    val inputStream = urlConnection.getInputStream()
+                    val file = File(requireContext().cacheDir, "temp_pdf_${System.currentTimeMillis()}.pdf")
+                    val outputStream = FileOutputStream(file)
+                    
+                    inputStream.use { input ->
+                        outputStream.use { output ->
+                            input.copyTo(output)
+                        }
+                    }
+                    file
+                }
+                
+                // Display the PDF
+                withContext(Dispatchers.Main) {
+                    binding.progressBar.isVisible = false
+                    binding.pdfView.visibility = View.VISIBLE
+                    
+                    binding.pdfView.fromFile(file)
+                        .enableSwipe(true)
+                        .swipeHorizontal(false)
+                        .enableDoubletap(true)
+                        .defaultPage(0)
+                        .enableAnnotationRendering(false)
+                        .password(null)
+                        .scrollHandle(null)
+                        .enableAntialiasing(true)
+                        .spacing(0)
+                        .onLoad { nbPages ->
+                            // PDF is loaded
+                            isDownloading = false
+                        }
+                        .onPageChange { page, pageCount ->
+                            // Handle page change
+                        }
+                        .onError { t ->
+                            isDownloading = false
+                            showErrorSnackBar("Error loading PDF: ${t.message}")
+                        }
+                        .load()
+                }
+            } catch (e: Exception) {
+                isDownloading = false
+                withContext(Dispatchers.Main) {
+                    binding.progressBar.isVisible = false
+                    showErrorSnackBar("Error: ${e.localizedMessage ?: "Unknown error"}")
+                }
+            }
+        }
+    
         viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
             try {
                 val input = URL(url).openStream()
