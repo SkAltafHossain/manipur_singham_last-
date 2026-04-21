@@ -1,8 +1,8 @@
-package com.kerala.lastkerala.ui.numberCombination.viewmodel
+package com.altaf.haryanalast.ui.numberCombination.viewmodel
 
 import androidx.lifecycle.viewModelScope
-import com.kerala.lastkerala.common.base.BaseViewModel
-import com.kerala.lastkerala.domain.usecase.numberCombination.NumberCombinationUseCase
+import com.altaf.haryanalast.common.base.BaseViewModel
+import com.altaf.haryanalast.domain.usecase.numberCombination.NumberCombinationUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

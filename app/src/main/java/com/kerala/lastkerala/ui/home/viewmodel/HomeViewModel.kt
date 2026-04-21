@@ -1,8 +1,8 @@
-package com.kerala.lastkerala.ui.home.viewmodel
+package com.altaf.haryanalast.ui.home.viewmodel
 
 
 import android.util.Log
-import com.kerala.lastkerala.common.base.BaseViewModel
+import com.altaf.haryanalast.common.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

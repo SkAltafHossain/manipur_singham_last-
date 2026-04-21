@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.domain.usecase.numberCombination
+package com.altaf.haryanalast.domain.usecase.numberCombination
 
 import javax.inject.Inject
 import javax.inject.Singleton

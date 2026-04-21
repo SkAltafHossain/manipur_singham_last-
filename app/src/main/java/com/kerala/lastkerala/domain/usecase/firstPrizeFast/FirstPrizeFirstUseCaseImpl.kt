@@ -1,10 +1,10 @@
-package com.kerala.lastkerala.domain.usecase.firstPrizeFast
+package com.altaf.haryanalast.domain.usecase.firstPrizeFast
 
-import com.kerala.lastkerala.common.result.NetworkResult
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
-import com.kerala.lastkerala.domain.model.FirstPrizeJodi
-import com.kerala.lastkerala.domain.repository.FirstPrizeFirstRepository
-import com.kerala.lastkerala.domain.repository.FirstPrizeJodiRepository
+import com.altaf.haryanalast.common.result.NetworkResult
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.domain.model.FirstPrizeJodi
+import com.altaf.haryanalast.domain.repository.FirstPrizeFirstRepository
+import com.altaf.haryanalast.domain.repository.FirstPrizeJodiRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

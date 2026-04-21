@@ -1,6 +1,6 @@
-package com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel
+package com.altaf.haryanalast.ui.firstPrizeFirst.viewmodel
 
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
 
 /**
  * UI State for First Prize First screen

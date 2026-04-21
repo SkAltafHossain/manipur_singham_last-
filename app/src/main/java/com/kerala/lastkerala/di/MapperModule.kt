@@ -1,11 +1,11 @@
-package com.kerala.lastkerala.di
+package com.altaf.haryanalast.di
 
-import com.kerala.lastkerala.domain.mapper.FirstPrizeFirstMapper
-import com.kerala.lastkerala.domain.mapper.FirstPrizeFirstMapperImpl
-import com.kerala.lastkerala.domain.mapper.FirstPrizeJodiMapper
-import com.kerala.lastkerala.domain.mapper.FirstPrizeJodiMapperImpl
-import com.kerala.lastkerala.domain.mapper.LatestResultsPdfMapper
-import com.kerala.lastkerala.domain.mapper.LatestResultsPdfMapperImpl
+import com.altaf.haryanalast.domain.mapper.FirstPrizeFirstMapper
+import com.altaf.haryanalast.domain.mapper.FirstPrizeFirstMapperImpl
+import com.altaf.haryanalast.domain.mapper.FirstPrizeJodiMapper
+import com.altaf.haryanalast.domain.mapper.FirstPrizeJodiMapperImpl
+import com.altaf.haryanalast.domain.mapper.LatestResultsPdfMapper
+import com.altaf.haryanalast.domain.mapper.LatestResultsPdfMapperImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

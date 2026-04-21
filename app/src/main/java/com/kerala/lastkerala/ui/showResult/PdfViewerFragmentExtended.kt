@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.showResult
+package com.altaf.haryanalast.ui.showResult
 
 import android.net.Uri
 import android.os.Bundle
@@ -11,7 +11,7 @@ import com.github.barteksc.pdfviewer.PDFView
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener
 import com.github.barteksc.pdfviewer.listener.OnPageErrorListener
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
-import com.kerala.lastkerala.R
+import com.altaf.haryanalast.R
 import java.io.File
 import java.io.IOException
 

@@ -1,9 +1,9 @@
-package com.kerala.lastkerala.data.repository
+package com.altaf.haryanalast.data.repository
 
-import com.kerala.lastkerala.data.remote.api.DataSource
-import com.kerala.lastkerala.domain.mapper.LatestResultsPdfMapper
-import com.kerala.lastkerala.domain.model.LatestResultPdf
-import com.kerala.lastkerala.domain.repository.LatestResultsPdfRepository
+import com.altaf.haryanalast.data.remote.api.DataSource
+import com.altaf.haryanalast.domain.mapper.LatestResultsPdfMapper
+import com.altaf.haryanalast.domain.model.LatestResultPdf
+import com.altaf.haryanalast.domain.repository.LatestResultsPdfRepository
 import javax.inject.Inject
 
 class LatestResultsPdfRepositoryImpl @Inject constructor(

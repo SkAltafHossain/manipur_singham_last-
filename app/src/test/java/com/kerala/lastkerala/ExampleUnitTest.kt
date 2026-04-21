@@ -1,4 +1,4 @@
-package com.kerala.lastkerala
+package com.altaf.haryanalast
 
 import org.junit.Test
 

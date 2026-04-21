@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kerala.lastkerala"
+    namespace = "com.altaf.haryanalast"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.kerala.lastkerala"
+        applicationId = "com.altaf.haryanalast"
         minSdk = 24
         targetSdk = 36
         versionCode = 3

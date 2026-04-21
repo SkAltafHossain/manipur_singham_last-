@@ -1,11 +1,11 @@
-package com.kerala.lastkerala.ui.firstPizeJodi.viewmodel
+package com.altaf.haryanalast.ui.firstPizeJodi.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.viewModelScope
-import com.kerala.lastkerala.common.base.BaseViewModel
-import com.kerala.lastkerala.common.extension.toSimpleJson
-import com.kerala.lastkerala.common.result.NetworkResult
-import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
+import com.altaf.haryanalast.common.base.BaseViewModel
+import com.altaf.haryanalast.common.extension.toSimpleJson
+import com.altaf.haryanalast.common.result.NetworkResult
+import com.altaf.haryanalast.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

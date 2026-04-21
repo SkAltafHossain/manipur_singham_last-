@@ -1,11 +1,11 @@
-package com.kerala.lastkerala.ui.numberCombination
+package com.altaf.haryanalast.ui.numberCombination
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.kerala.lastkerala.databinding.ItemNumberCombinationBinding
+import com.altaf.haryanalast.databinding.ItemNumberCombinationBinding
 
 class NumberCombinationAdapter : ListAdapter<String, NumberCombinationAdapter.NumberCombinationViewHolder>(DiffCallback) {
 

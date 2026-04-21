@@ -1,7 +1,7 @@
-package com.kerala.lastkerala.di
+package com.altaf.haryanalast.di
 
-import com.kerala.lastkerala.BuildConfig
-import com.kerala.lastkerala.data.remote.api.ApiService
+import com.altaf.haryanalast.BuildConfig
+import com.altaf.haryanalast.data.remote.api.ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

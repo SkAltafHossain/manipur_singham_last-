@@ -1,11 +1,11 @@
-package com.kerala.lastkerala.di
+package com.altaf.haryanalast.di
 
-import com.kerala.lastkerala.data.repository.FirstPrizeFirstRepositoryImpl
-import com.kerala.lastkerala.data.repository.FirstPrizeJodiRepositoryImpl
-import com.kerala.lastkerala.data.repository.LatestResultsPdfRepositoryImpl
-import com.kerala.lastkerala.domain.repository.FirstPrizeFirstRepository
-import com.kerala.lastkerala.domain.repository.FirstPrizeJodiRepository
-import com.kerala.lastkerala.domain.repository.LatestResultsPdfRepository
+import com.altaf.haryanalast.data.repository.FirstPrizeFirstRepositoryImpl
+import com.altaf.haryanalast.data.repository.FirstPrizeJodiRepositoryImpl
+import com.altaf.haryanalast.data.repository.LatestResultsPdfRepositoryImpl
+import com.altaf.haryanalast.domain.repository.FirstPrizeFirstRepository
+import com.altaf.haryanalast.domain.repository.FirstPrizeJodiRepository
+import com.altaf.haryanalast.domain.repository.LatestResultsPdfRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

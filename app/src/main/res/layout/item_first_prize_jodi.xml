@@ -6,7 +6,7 @@
     <data>
         <variable
             name="item"
-            type="com.kerala.lastkerala.domain.model.FirstPrizeJodi" />
+            type="com.altaf.haryanalast.domain.model.FirstPrizeJodi" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,7 +1,7 @@
-package com.kerala.lastkerala.domain.mapper
+package com.altaf.haryanalast.domain.mapper
 
-import com.kerala.lastkerala.data.remote.dto.LatestResultPdfItemDto
-import com.kerala.lastkerala.domain.model.LatestResultPdf
+import com.altaf.haryanalast.data.remote.dto.LatestResultPdfItemDto
+import com.altaf.haryanalast.domain.model.LatestResultPdf
 import javax.inject.Inject
 
 interface LatestResultsPdfMapper {

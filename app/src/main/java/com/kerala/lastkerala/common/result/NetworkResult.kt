@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.common.result
+package com.altaf.haryanalast.common.result
 
 sealed class NetworkResult<out T> {
     data class Success<T>(val data: T) : NetworkResult<T>()

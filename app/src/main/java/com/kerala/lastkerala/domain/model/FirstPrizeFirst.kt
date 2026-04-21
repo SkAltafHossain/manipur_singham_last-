@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.domain.model
+package com.altaf.haryanalast.domain.model
 
 data class FirstPrizeFirst(
     val date: String,

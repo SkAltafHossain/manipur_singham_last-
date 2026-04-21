@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.common.extension
+package com.altaf.haryanalast.common.extension
 
 import android.content.ActivityNotFoundException
 import android.content.ClipData
@@ -11,7 +11,7 @@ import android.net.ConnectivityManager
 import android.net.Uri
 import android.os.Build
 import android.text.SpannableString
-import com.kerala.lastkerala.BuildConfig
+import com.altaf.haryanalast.BuildConfig
 
 fun Context.shareApp(){
     try {

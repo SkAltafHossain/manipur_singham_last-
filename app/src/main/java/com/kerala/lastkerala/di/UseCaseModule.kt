@@ -1,13 +1,13 @@
-package com.kerala.lastkerala.di
+package com.altaf.haryanalast.di
 
-import com.kerala.lastkerala.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCase
-import com.kerala.lastkerala.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCaseImpl
-import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
-import com.kerala.lastkerala.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCaseImpl
-import com.kerala.lastkerala.domain.usecase.latestresultspdf.LatestResultsPdfUseCase
-import com.kerala.lastkerala.domain.usecase.latestresultspdf.LatestResultsPdfUseCaseImpl
-import com.kerala.lastkerala.domain.usecase.numberCombination.NumberCombinationUseCase
-import com.kerala.lastkerala.domain.usecase.numberCombination.NumberCombinationUseCaseImpl
+import com.altaf.haryanalast.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCase
+import com.altaf.haryanalast.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCaseImpl
+import com.altaf.haryanalast.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
+import com.altaf.haryanalast.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCaseImpl
+import com.altaf.haryanalast.domain.usecase.latestresultspdf.LatestResultsPdfUseCase
+import com.altaf.haryanalast.domain.usecase.latestresultspdf.LatestResultsPdfUseCaseImpl
+import com.altaf.haryanalast.domain.usecase.numberCombination.NumberCombinationUseCase
+import com.altaf.haryanalast.domain.usecase.numberCombination.NumberCombinationUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

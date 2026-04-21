@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.common.extension
+package com.altaf.haryanalast.common.extension
 
 import android.app.Activity
 import android.content.Context
@@ -18,7 +18,7 @@ import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.snackbar.Snackbar
-import com.kerala.lastkerala.R
+import com.altaf.haryanalast.R
 import kotlin.math.abs
 import kotlin.text.isEmpty
 

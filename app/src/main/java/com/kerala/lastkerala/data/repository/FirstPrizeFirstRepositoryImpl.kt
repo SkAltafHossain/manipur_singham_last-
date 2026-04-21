@@ -1,9 +1,9 @@
-package com.kerala.lastkerala.data.repository
+package com.altaf.haryanalast.data.repository
 
-import com.kerala.lastkerala.data.remote.api.DataSource
-import com.kerala.lastkerala.domain.mapper.FirstPrizeFirstMapper
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
-import com.kerala.lastkerala.domain.repository.FirstPrizeFirstRepository
+import com.altaf.haryanalast.data.remote.api.DataSource
+import com.altaf.haryanalast.domain.mapper.FirstPrizeFirstMapper
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.domain.repository.FirstPrizeFirstRepository
 import javax.inject.Inject
 
 class FirstPrizeFirstRepositoryImpl @Inject constructor(

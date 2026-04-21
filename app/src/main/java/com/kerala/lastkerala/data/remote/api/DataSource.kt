@@ -1,8 +1,8 @@
-package com.kerala.lastkerala.data.remote.api
+package com.altaf.haryanalast.data.remote.api
 
-import com.kerala.lastkerala.data.remote.model.FirstPrizeFirstResponse
-import com.kerala.lastkerala.data.remote.model.FirstPrizeJodiResponse
-import com.kerala.lastkerala.data.remote.model.LatestResultsPdfResponse
+import com.altaf.haryanalast.data.remote.model.FirstPrizeFirstResponse
+import com.altaf.haryanalast.data.remote.model.FirstPrizeJodiResponse
+import com.altaf.haryanalast.data.remote.model.LatestResultsPdfResponse
 
 interface DataSource {
     suspend fun getFirstPrizeJodi(): FirstPrizeJodiResponse

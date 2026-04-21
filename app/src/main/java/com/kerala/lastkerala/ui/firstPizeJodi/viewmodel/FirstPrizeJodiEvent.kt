@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.firstPizeJodi.viewmodel
+package com.altaf.haryanalast.ui.firstPizeJodi.viewmodel
 
 /**
  * Sealed class for one-time events in First Prize Jodi screen

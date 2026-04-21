@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.di
+package com.altaf.haryanalast.di
 
 import android.content.Context
 import android.content.SharedPreferences

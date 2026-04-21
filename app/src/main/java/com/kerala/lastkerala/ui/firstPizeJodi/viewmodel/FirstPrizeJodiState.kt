@@ -1,6 +1,6 @@
-package com.kerala.lastkerala.ui.firstPizeJodi.viewmodel
+package com.altaf.haryanalast.ui.firstPizeJodi.viewmodel
 
-import com.kerala.lastkerala.domain.model.FirstPrizeJodi
+import com.altaf.haryanalast.domain.model.FirstPrizeJodi
 
 /**
  * UI State for First Prize Jodi screen

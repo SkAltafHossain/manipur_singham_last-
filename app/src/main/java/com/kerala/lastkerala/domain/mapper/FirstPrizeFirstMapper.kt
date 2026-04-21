@@ -1,7 +1,7 @@
-package com.kerala.lastkerala.domain.mapper
+package com.altaf.haryanalast.domain.mapper
 
-import com.kerala.lastkerala.data.remote.dto.FirstPrizeFirstDto
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.data.remote.dto.FirstPrizeFirstDto
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
 import javax.inject.Inject
 
 interface FirstPrizeFirstMapper {

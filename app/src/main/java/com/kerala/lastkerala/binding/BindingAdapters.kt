@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.binding
+package com.altaf.haryanalast.binding
 import android.text.Html
 import android.text.method.LinkMovementMethod
 import android.widget.ImageView

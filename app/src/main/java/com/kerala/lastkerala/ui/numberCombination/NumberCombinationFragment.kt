@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.numberCombination
+package com.altaf.haryanalast.ui.numberCombination
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,13 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.kerala.lastkerala.R
-import com.kerala.lastkerala.common.base.BaseFragment
-import com.kerala.lastkerala.databinding.FragmentNumberCombinationBinding
-import com.kerala.lastkerala.ui.numberCombination.adapter.NumberCombinationAdapter
-import com.kerala.lastkerala.ui.numberCombination.viewmodel.NumberCombinationViewModel
-import com.kerala.lastkerala.ui.numberCombination.viewmodel.NumberCombinationEvent
-import com.kerala.lastkerala.ui.numberCombination.viewmodel.NumberCombinationState
+import com.altaf.haryanalast.R
+import com.altaf.haryanalast.common.base.BaseFragment
+import com.altaf.haryanalast.databinding.FragmentNumberCombinationBinding
+import com.altaf.haryanalast.ui.numberCombination.adapter.NumberCombinationAdapter
+import com.altaf.haryanalast.ui.numberCombination.viewmodel.NumberCombinationViewModel
+import com.altaf.haryanalast.ui.numberCombination.viewmodel.NumberCombinationEvent
+import com.altaf.haryanalast.ui.numberCombination.viewmodel.NumberCombinationState
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

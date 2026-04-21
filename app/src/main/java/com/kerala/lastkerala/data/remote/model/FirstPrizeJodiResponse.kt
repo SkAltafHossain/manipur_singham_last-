@@ -1,6 +1,6 @@
-package com.kerala.lastkerala.data.remote.model
+package com.altaf.haryanalast.data.remote.model
 
-import com.kerala.lastkerala.data.remote.dto.FirstPrizeJodiDto
+import com.altaf.haryanalast.data.remote.dto.FirstPrizeJodiDto
 
 data class FirstPrizeJodiResponse(
     val status: String,

@@ -1,6 +1,6 @@
-package com.kerala.lastkerala.ui.showResult.viewmodel
+package com.altaf.haryanalast.ui.showResult.viewmodel
 
-import com.kerala.lastkerala.domain.model.LatestResultPdf
+import com.altaf.haryanalast.domain.model.LatestResultPdf
 
 /**
  * UI State for ShowResult screen

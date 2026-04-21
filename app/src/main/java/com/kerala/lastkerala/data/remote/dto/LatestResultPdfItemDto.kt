@@ -1,8 +1,8 @@
-package com.kerala.lastkerala.data.remote.dto
+package com.altaf.haryanalast.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
-import com.kerala.lastkerala.BuildConfig
-import com.kerala.lastkerala.domain.model.LatestResultPdf
+import com.altaf.haryanalast.BuildConfig
+import com.altaf.haryanalast.domain.model.LatestResultPdf
 
 data class LatestResultPdfItemDto(
     @SerializedName("uniqcode")

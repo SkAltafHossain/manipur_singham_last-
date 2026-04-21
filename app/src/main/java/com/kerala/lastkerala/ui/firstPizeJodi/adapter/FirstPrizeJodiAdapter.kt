@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.firstPizeJodi.adapter
+package com.altaf.haryanalast.ui.firstPizeJodi.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.kerala.lastkerala.databinding.ItemFirstPrizeHeaderBinding
-import com.kerala.lastkerala.databinding.ItemFirstPrizeJodiBinding
-import com.kerala.lastkerala.domain.model.FirstPrizeJodi
+import com.altaf.haryanalast.databinding.ItemFirstPrizeHeaderBinding
+import com.altaf.haryanalast.databinding.ItemFirstPrizeJodiBinding
+import com.altaf.haryanalast.domain.model.FirstPrizeJodi
 
 private const val TYPE_HEADER = 0
 private const val TYPE_ITEM = 1

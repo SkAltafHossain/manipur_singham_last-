@@ -1,6 +1,6 @@
-package com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel
+package com.altaf.haryanalast.ui.firstPrizeFirst.viewmodel
 
-import com.kerala.lastkerala.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
+import com.altaf.haryanalast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
 
 // Sealed class for one-time events in First Prize First screen
 sealed class FirstPrizeFirstEvent {

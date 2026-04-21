@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.common.base
+package com.altaf.haryanalast.common.base
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

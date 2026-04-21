@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.viewmodel
+package com.altaf.haryanalast.ui.viewmodel
 
 sealed class MainEvent {
     object ShowToast : MainEvent()

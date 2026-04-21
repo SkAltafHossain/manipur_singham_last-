@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.home.viewmodel
+package com.altaf.haryanalast.ui.home.viewmodel
 
 
 sealed class HomeEvent {

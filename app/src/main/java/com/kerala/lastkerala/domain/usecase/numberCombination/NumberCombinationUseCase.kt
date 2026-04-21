@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.domain.usecase.numberCombination
+package com.altaf.haryanalast.domain.usecase.numberCombination
 
 interface NumberCombinationUseCase {
 

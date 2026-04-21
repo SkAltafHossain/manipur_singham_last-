@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.firstPrizeFirst
+package com.altaf.haryanalast.ui.firstPrizeFirst
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,14 +8,14 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.kerala.lastkerala.R
-import com.kerala.lastkerala.common.base.BaseFragment
-import com.kerala.lastkerala.common.extension.showErrorSnackBar
-import com.kerala.lastkerala.databinding.FragmentFirstPrizeFirstBinding
-import com.kerala.lastkerala.ui.firstPrizeFirst.adapter.FirstPrizeFirstAdapter
-import com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstEvent
-import com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstState
-import com.kerala.lastkerala.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstViewModel
+import com.altaf.haryanalast.R
+import com.altaf.haryanalast.common.base.BaseFragment
+import com.altaf.haryanalast.common.extension.showErrorSnackBar
+import com.altaf.haryanalast.databinding.FragmentFirstPrizeFirstBinding
+import com.altaf.haryanalast.ui.firstPrizeFirst.adapter.FirstPrizeFirstAdapter
+import com.altaf.haryanalast.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstEvent
+import com.altaf.haryanalast.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstState
+import com.altaf.haryanalast.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

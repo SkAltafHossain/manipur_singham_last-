@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.showResult
+package com.altaf.haryanalast.ui.showResult
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,15 +9,15 @@ import androidx.lifecycle.lifecycleScope
 import com.github.barteksc.pdfviewer.listener.OnErrorListener
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener
-import com.kerala.lastkerala.common.base.BaseFragment
-import com.kerala.lastkerala.common.extension.disable
-import com.kerala.lastkerala.common.extension.enable
-import com.kerala.lastkerala.common.extension.showErrorSnackBar
-import com.kerala.lastkerala.databinding.FragmentShowResultBinding
-import com.kerala.lastkerala.domain.model.LatestResultPdf
-import com.kerala.lastkerala.ui.showResult.viewmodel.ShowResultEvent
-import com.kerala.lastkerala.ui.showResult.viewmodel.ShowResultState
-import com.kerala.lastkerala.ui.showResult.viewmodel.ShowResultViewModel
+import com.altaf.haryanalast.common.base.BaseFragment
+import com.altaf.haryanalast.common.extension.disable
+import com.altaf.haryanalast.common.extension.enable
+import com.altaf.haryanalast.common.extension.showErrorSnackBar
+import com.altaf.haryanalast.databinding.FragmentShowResultBinding
+import com.altaf.haryanalast.domain.model.LatestResultPdf
+import com.altaf.haryanalast.ui.showResult.viewmodel.ShowResultEvent
+import com.altaf.haryanalast.ui.showResult.viewmodel.ShowResultState
+import com.altaf.haryanalast.ui.showResult.viewmodel.ShowResultViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

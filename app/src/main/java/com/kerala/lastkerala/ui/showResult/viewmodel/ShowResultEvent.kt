@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.showResult.viewmodel
+package com.altaf.haryanalast.ui.showResult.viewmodel
 
 // Sealed class for one-time events in ShowResult screen
 sealed class ShowResultEvent {

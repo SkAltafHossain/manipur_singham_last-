@@ -1,6 +1,6 @@
-package com.kerala.lastkerala.domain.repository
+package com.altaf.haryanalast.domain.repository
 
-import com.kerala.lastkerala.domain.model.FirstPrizeJodi
+import com.altaf.haryanalast.domain.model.FirstPrizeJodi
 
 interface FirstPrizeJodiRepository {
     suspend fun getFirstPrizeJodi(): MutableList<FirstPrizeJodi>

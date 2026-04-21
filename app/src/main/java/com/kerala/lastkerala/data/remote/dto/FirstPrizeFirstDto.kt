@@ -1,7 +1,7 @@
-package com.kerala.lastkerala.data.remote.dto
+package com.altaf.haryanalast.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
 
 data class FirstPrizeFirstDto(
     @SerializedName("date")

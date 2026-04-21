@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.common.base
+package com.altaf.haryanalast.common.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

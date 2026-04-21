@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.common.extension
+package com.altaf.haryanalast.common.extension
 
 import androidx.annotation.AnimRes
 import androidx.annotation.AnimatorRes
@@ -7,7 +7,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavDirections
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.kerala.lastkerala.R
+import com.altaf.haryanalast.R
 import org.json.JSONArray
 
 

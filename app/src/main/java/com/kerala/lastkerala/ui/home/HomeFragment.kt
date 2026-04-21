@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.home
+package com.altaf.haryanalast.ui.home
 
 import android.os.Bundle
 import android.util.Log
@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.kerala.lastkerala.R
-import com.kerala.lastkerala.common.base.BaseFragment
-import com.kerala.lastkerala.common.extension.navigateWithAnimation
-import com.kerala.lastkerala.common.extension.shareApp
-import com.kerala.lastkerala.databinding.FragmentHomeBinding
-import com.kerala.lastkerala.ui.home.viewmodel.HomeEvent
+import com.altaf.haryanalast.R
+import com.altaf.haryanalast.common.base.BaseFragment
+import com.altaf.haryanalast.common.extension.navigateWithAnimation
+import com.altaf.haryanalast.common.extension.shareApp
+import com.altaf.haryanalast.databinding.FragmentHomeBinding
+import com.altaf.haryanalast.ui.home.viewmodel.HomeEvent
 import dagger.hilt.android.AndroidEntryPoint
-import com.kerala.lastkerala.ui.home.viewmodel.HomeViewModel
+import com.altaf.haryanalast.ui.home.viewmodel.HomeViewModel
 import kotlinx.coroutines.launch
 
 

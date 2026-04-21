@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.numberCombination.viewmodel
+package com.altaf.haryanalast.ui.numberCombination.viewmodel
 
 /**
  * UI State for Number Combination screen

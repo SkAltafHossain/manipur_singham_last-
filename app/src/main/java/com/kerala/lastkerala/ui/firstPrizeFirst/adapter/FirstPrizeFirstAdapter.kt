@@ -1,13 +1,13 @@
-package com.kerala.lastkerala.ui.firstPrizeFirst.adapter
+package com.altaf.haryanalast.ui.firstPrizeFirst.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.kerala.lastkerala.databinding.ItemFirstPrizeFirstBinding
-import com.kerala.lastkerala.databinding.ItemFirstPrizeHeaderBinding
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.databinding.ItemFirstPrizeFirstBinding
+import com.altaf.haryanalast.databinding.ItemFirstPrizeHeaderBinding
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
 
 private const val TYPE_HEADER = 0
 private const val TYPE_ITEM = 1

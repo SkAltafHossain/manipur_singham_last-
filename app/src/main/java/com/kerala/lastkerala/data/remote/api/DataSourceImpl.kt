@@ -1,10 +1,10 @@
-package com.kerala.lastkerala.data.remote.api
+package com.altaf.haryanalast.data.remote.api
 
 import android.util.Log
-import com.kerala.lastkerala.common.extension.toSimpleJson
-import com.kerala.lastkerala.data.remote.model.FirstPrizeFirstResponse
-import com.kerala.lastkerala.data.remote.model.FirstPrizeJodiResponse
-import com.kerala.lastkerala.data.remote.model.LatestResultsPdfResponse
+import com.altaf.haryanalast.common.extension.toSimpleJson
+import com.altaf.haryanalast.data.remote.model.FirstPrizeFirstResponse
+import com.altaf.haryanalast.data.remote.model.FirstPrizeJodiResponse
+import com.altaf.haryanalast.data.remote.model.LatestResultsPdfResponse
 
 class DataSourceImpl(
     private val apiService: ApiService

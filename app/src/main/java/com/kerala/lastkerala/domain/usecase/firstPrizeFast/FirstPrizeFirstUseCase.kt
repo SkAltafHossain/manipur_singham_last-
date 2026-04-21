@@ -1,7 +1,7 @@
-package com.kerala.lastkerala.domain.usecase.firstPrizeFast
+package com.altaf.haryanalast.domain.usecase.firstPrizeFast
 
-import com.kerala.lastkerala.common.result.NetworkResult
-import com.kerala.lastkerala.domain.model.FirstPrizeFirst
+import com.altaf.haryanalast.common.result.NetworkResult
+import com.altaf.haryanalast.domain.model.FirstPrizeFirst
 
 interface FirstPrizeFirstUseCase {
     suspend operator fun invoke(): NetworkResult<List<FirstPrizeFirst>>

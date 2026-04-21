@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.domain.model
+package com.altaf.haryanalast.domain.model
 
 data class LatestResultPdf(
     val uniqcode: String,

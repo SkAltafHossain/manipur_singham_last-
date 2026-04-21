@@ -1,7 +1,7 @@
-package com.kerala.lastkerala.ui.viewmodel
+package com.altaf.haryanalast.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import com.kerala.lastkerala.common.base.BaseViewModel
+import com.altaf.haryanalast.common.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

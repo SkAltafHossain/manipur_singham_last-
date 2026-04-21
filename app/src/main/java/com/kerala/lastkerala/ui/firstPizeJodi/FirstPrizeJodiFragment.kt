@@ -1,4 +1,4 @@
-package com.kerala.lastkerala.ui.firstPizeJodi
+package com.altaf.haryanalast.ui.firstPizeJodi
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,14 +8,14 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.kerala.lastkerala.R
-import com.kerala.lastkerala.common.base.BaseFragment
-import com.kerala.lastkerala.common.extension.showErrorSnackBar
-import com.kerala.lastkerala.databinding.FragmentFirstPrizeJodiBinding
-import com.kerala.lastkerala.ui.firstPizeJodi.adapter.FirstPrizeJodiAdapter
-import com.kerala.lastkerala.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
-import com.kerala.lastkerala.ui.firstPizeJodi.viewmodel.FirstPrizeJodiState
-import com.kerala.lastkerala.ui.firstPizeJodi.viewmodel.FirstPrizeJodiViewModel
+import com.altaf.haryanalast.R
+import com.altaf.haryanalast.common.base.BaseFragment
+import com.altaf.haryanalast.common.extension.showErrorSnackBar
+import com.altaf.haryanalast.databinding.FragmentFirstPrizeJodiBinding
+import com.altaf.haryanalast.ui.firstPizeJodi.adapter.FirstPrizeJodiAdapter
+import com.altaf.haryanalast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
+import com.altaf.haryanalast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiState
+import com.altaf.haryanalast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
