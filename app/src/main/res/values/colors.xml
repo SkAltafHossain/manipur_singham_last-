@@ -12,6 +12,7 @@
     <color name="white_50">#80FFFFFF</color>
     <color name="red">#FF0000</color>
     <color name="appGreen">#41FF00</color>
+    <color name="green">#0D490D</color>
 
     <!-- Material Design colors -->
     <color name="purple_500">#FF6200EE</color>
