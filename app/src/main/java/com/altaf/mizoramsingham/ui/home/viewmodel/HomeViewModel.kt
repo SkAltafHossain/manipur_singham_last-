@@ -28,6 +28,7 @@ class HomeViewModel @Inject constructor(
             "LastNumber" -> _uiEvent.value = HomeEvent.LastNumberClick
             "NumberCombination" -> _uiEvent.value = HomeEvent.NumberCombinationClick
             "ShowResult" -> _uiEvent.value = HomeEvent.ShowResultClick
+            "ShareApp" -> _uiEvent.value = HomeEvent.ShareAppClick
         }
     }
 

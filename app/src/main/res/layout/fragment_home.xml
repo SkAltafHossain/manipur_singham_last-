@@ -79,15 +79,15 @@
 
                 <!-- Card 1: Top Left -->
                 <include
-                    android:id="@+id/cardFirstPrizeJodi"
+                    android:id="@+id/cardShowResult"
                     layout="@layout/item_card"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_113sdp"
                     android:layout_marginEnd="@dimen/_7sdp"
-                    app:cardTitle="@{@string/first_prize_jodi}"
-                    app:cardIcon="@{@drawable/ic_prize}"
+                    app:cardTitle="@{@string/show_result}"
+                    app:cardIcon="@{@drawable/ic_result}"
                     app:viewModelData="@{viewModel}"
-                    app:cardType='@{"LastJodiNumber"}'
+                    app:cardType='@{"ShowResult"}'
                     app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -109,43 +109,22 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
 
-                <!-- Card 3: Bottom Left -->
+                <!-- Card 3: Center -->
                 <include
-                    android:id="@+id/cardNumberCombination"
-                    layout="@layout/item_card"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_113sdp"
-                    android:layout_marginEnd="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    app:cardTitle="@{@string/number_combination}"
-                    app:cardIcon="@{@drawable/ic_combination}"
-                    app:viewModelData="@{viewModel}"
-                    app:cardType='@{"NumberCombination"}'
-                    app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/cardFirstPrizeJodi" />
-
-
-                <!-- Card 4: Bottom Right -->
-                <include
-                    android:id="@+id/cardShowResult"
+                    android:id="@+id/cardShareApp"
                     layout="@layout/item_card"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_113sdp"
                     android:layout_marginTop="@dimen/_12sdp"
-                    android:layout_marginStart="@dimen/_7sdp"
-                    app:cardTitle="@{@string/show_result}"
-                    app:cardIcon="@{@drawable/ic_result}"
+                    app:cardTitle="@{@string/share_app}"
+                    app:cardIcon="@{@drawable/ic_share}"
                     app:viewModelData="@{viewModel}"
-                    app:cardType='@{"ShowResult"}'
+                    app:cardType='@{"ShareApp"}'
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/guidelineVertical"
-                    app:layout_constraintTop_toBottomOf="@id/cardFirstPrizeSingle" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardShowResult"
+                    app:layout_constraintWidth_percent="0.5" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_20sdp"
-                    app:layout_constraintTop_toBottomOf="@+id/cardShowResult"/>
                 <!-- Vertical guideline for center spacing -->
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guidelineVertical"
@@ -154,31 +133,7 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent="0.5" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            <!-- Share Button -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/shareButton"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_24sdp"
-                android:layout_marginHorizontal="@dimen/_32sdp"
-                android:drawablePadding="@dimen/_6sdp"
-                android:drawableStart="@drawable/ic_share"
-                android:paddingVertical="@dimen/_9sdp"
-                android:text="@string/share_app"
-                android:textAllCaps="false"
-                android:onClick='@{() -> viewModel.onShareAppClick()}'
-                android:textColor="@color/purple_700"
-                app:iconTint="@color/purple_700"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cardsContainer"
-                app:strokeColor="@color/purple_700"
-                app:strokeWidth="@dimen/_1sdp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
