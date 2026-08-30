@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.altaf.haryanalast.ui.home.viewmodel.HomeViewModel" />
+            type="com.altaf.manipursingham.ui.home.viewmodel.HomeViewModel" />
     </data>
 
 
@@ -30,7 +30,7 @@
                 android:id="@+id/logoImage"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_100sdp"
-                android:src="@drawable/haryana_last"
+                android:src="@drawable/ic_logo"
                 android:contentDescription="@string/app_name"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

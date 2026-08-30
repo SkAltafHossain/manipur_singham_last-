@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.altaf.haryanalast"
+    namespace = "com.altaf.manipursingham"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.altaf.haryanalast"
+        applicationId = "com.altaf.manipursingham"
         minSdk = 24
         targetSdk = 36
         versionCode = 3
@@ -21,8 +21,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "PDF_URL", "\"https://harianastatelottery.com/\"")
-        buildConfigField("String", "BASE_URL", "\"https://harianastatelottery.com/api/\"")
+        buildConfigField("String", "PDF_URL", "\"https://manipursingham.com/\"")
+        buildConfigField("String", "BASE_URL", "\"https://manipursingham.com/api/\"")
     }
 
     buildTypes {

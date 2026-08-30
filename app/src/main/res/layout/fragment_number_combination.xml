@@ -5,7 +5,7 @@
 
     <data>
         <variable name="viewModel"
-            type="com.altaf.haryanalast.ui.numberCombination.viewmodel.NumberCombinationViewModel" />
+            type="com.altaf.manipursingham.ui.numberCombination.viewmodel.NumberCombinationViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -23,6 +23,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Last Kerala"
+rootProject.name = "Manipur Singham Last"
 include(":app")
 include(":android-pdf-viewer")
