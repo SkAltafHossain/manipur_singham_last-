@@ -6,14 +6,16 @@ import com.altaf.manipursingham.domain.model.FirstPrizeFirst
 data class FirstPrizeFirstDto(
     @SerializedName("date")
     val date: String,
-    @SerializedName("11:30 AM")
+    @SerializedName("11:00 AM")
     val time1130: String,
-    @SerializedName("03:00 PM")
+    @SerializedName("12:00 PM")
     val time1500: String,
-    @SerializedName("05:00 PM")
+    @SerializedName("04:00 PM")
     val time1700: String,
-    @SerializedName("08:30 PM")
-    val time2030: String
+    @SerializedName("07:00 PM")
+    val time2030: String,
+    @SerializedName("09:00 PM")
+    val time2200: String
 ) {
     fun toFirstPrizeFirst(): FirstPrizeFirst {
         return FirstPrizeFirst(
@@ -21,7 +23,8 @@ data class FirstPrizeFirstDto(
             time1130 = time1130,
             time1500 = time1500,
             time1700 = time1700,
-            time2030 = time2030
+            time2030 = time2030,
+            time2200 = time2200
         )
     }
 }

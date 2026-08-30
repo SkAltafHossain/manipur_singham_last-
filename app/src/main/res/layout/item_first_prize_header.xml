@@ -14,9 +14,10 @@
         <TextView
             android:id="@+id/headerDate"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:text="@string/date"
             android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:padding="@dimen/_4sdp"
@@ -24,16 +25,17 @@
             app:layout_constraintEnd_toStartOf="@+id/header1130"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.24" />
+            app:layout_constraintWidth_percent="0.25" />
 
-        <!-- 11:30 Header -->
+        <!-- 11:00 Header -->
         <TextView
             android:id="@+id/header1130"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:padding="@dimen/_4sdp"
-            android:text="@string/_11_30_am"
+            android:text="@string/_11_00_am"
             android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@color/black"
             android:background="@drawable/box_drawable"
             android:textStyle="bold"
@@ -41,16 +43,17 @@
             app:layout_constraintEnd_toStartOf="@+id/header1500"
             app:layout_constraintStart_toEndOf="@id/headerDate"
             app:layout_constraintTop_toTopOf="@+id/headerDate"
-            app:layout_constraintWidth_percent="0.19" />
+            app:layout_constraintWidth_percent="0.15" />
 
-        <!-- 3:00 Header -->
+        <!-- 12:00 Header -->
         <TextView
             android:id="@+id/header1500"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:padding="@dimen/_4sdp"
-            android:text="@string/_3_00_pm"
+            android:text="@string/_12_00_pm"
             android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@color/black"
             android:background="@drawable/box_drawable"
             android:textStyle="bold"
@@ -58,41 +61,61 @@
             app:layout_constraintEnd_toStartOf="@+id/header1700"
             app:layout_constraintStart_toEndOf="@id/header1130"
             app:layout_constraintTop_toTopOf="@+id/headerDate"
-            app:layout_constraintWidth_percent="0.19" />
+            app:layout_constraintWidth_percent="0.15" />
 
-        <!-- 5:00 Header -->
+        <!-- 4:00 Header -->
         <TextView
             android:id="@+id/header1700"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:padding="@dimen/_4sdp"
-            android:text="@string/_5_00_pm"
+            android:text="@string/_4_00_pm"
             android:background="@drawable/box_drawable"
             android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/headerDate"
             app:layout_constraintEnd_toStartOf="@+id/header2030"
             app:layout_constraintStart_toEndOf="@id/header1500"
             app:layout_constraintTop_toTopOf="@+id/headerDate"
-            app:layout_constraintWidth_percent="0.19" />
+            app:layout_constraintWidth_percent="0.15" />
 
-        <!-- 8:30 Header -->
+        <!-- 7:00 Header -->
         <TextView
             android:id="@+id/header2030"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:padding="@dimen/_4sdp"
-            android:text="@string/_8_30_pm"
+            android:text="@string/_7_00_pm"
             android:background="@drawable/box_drawable"
             android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/headerDate"
+            app:layout_constraintEnd_toStartOf="@+id/header2200"
+            app:layout_constraintStart_toEndOf="@id/header1700"
+            app:layout_constraintTop_toTopOf="@+id/headerDate"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <!-- 9:00 Header -->
+        <TextView
+            android:id="@+id/header2200"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/_9_00_pm"
+            android:background="@drawable/box_drawable"
+            android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/headerDate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/header1700"
+            app:layout_constraintStart_toEndOf="@id/header2030"
             app:layout_constraintTop_toTopOf="@+id/headerDate"
-            app:layout_constraintWidth_percent="0.19" />
+            app:layout_constraintWidth_percent="0.15" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
