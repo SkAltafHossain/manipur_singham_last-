@@ -25,15 +25,30 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/bg_header"/>
 
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:hint="@string/search_number"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/box_drawable"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:clipToPadding="false"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@color/transparent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_first_prize_jodi"
-            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintTop_toBottomOf="@+id/searchEditText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>

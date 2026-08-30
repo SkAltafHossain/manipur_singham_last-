@@ -33,4 +33,5 @@
     <string name="an_error_occurred">An error occurred</string>
     <string name="enter_4_digit_number">Enter 4-digit number</string>
     <string name="search">Search</string>
+    <string name="search_number">Search number...</string>
 </resources>

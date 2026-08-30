@@ -1,9 +1,12 @@
 package com.altaf.manipursingham.ui.firstPrizeFirst
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -32,8 +35,8 @@ class FirstPrizeFirstFragment : BaseFragment<FirstPrizeFirstViewModel, FragmentF
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Add any additional setup here
         setupRecyclerView()
+        setupSearch()
         observeViewModel()
     }
 
@@ -42,6 +45,19 @@ class FirstPrizeFirstFragment : BaseFragment<FirstPrizeFirstViewModel, FragmentF
             adapter = firstPrizeFirstAdapter
             setHasFixedSize(true)
         }
+    }
+
+    private fun setupSearch() {
+        binding.searchEditText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val searchQuery = s?.toString() ?: ""
+                firstPrizeFirstAdapter.setSearchQuery(searchQuery)
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
 
     private fun observeViewModel() {
