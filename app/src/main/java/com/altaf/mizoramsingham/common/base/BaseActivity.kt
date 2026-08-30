@@ -1,7 +1,9 @@
 package com.altaf.manipursingham.common.base
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModel
@@ -22,7 +24,12 @@ abstract class BaseActivity<VM : ViewModel, DB : ViewDataBinding> : AppCompatAct
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val nightModeFlags = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
+        val isDarkMode = nightModeFlags == Configuration.UI_MODE_NIGHT_YES
 
+        val insetsController = WindowCompat.getInsetsController(window, window.decorView)
+
+        insetsController.isAppearanceLightNavigationBars = !isDarkMode
         // Inflate and bind layout
         binding = DataBindingUtil.setContentView(this, getLayoutId())
         binding.lifecycleOwner = this

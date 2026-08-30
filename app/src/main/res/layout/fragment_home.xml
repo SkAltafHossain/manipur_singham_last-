@@ -56,7 +56,7 @@
                 android:id="@+id/appDescriptionText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/check_latest_lottery_results_and_number_combinations"
+                android:text="@string/check_latest_lottery_results_and_first_prize_last_digit"
                 android:textSize="@dimen/_11ssp"
                 android:textColor="@android:color/black"
                 android:gravity="center"
@@ -124,6 +124,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/cardShowResult"
                     app:layout_constraintWidth_percent="0.5" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardShareApp"/>
 
                 <!-- Vertical guideline for center spacing -->
                 <androidx.constraintlayout.widget.Guideline

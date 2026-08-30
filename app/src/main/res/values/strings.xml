@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Manipur Singham Last</string>
     <string name="kerala_lottery">Manipur Singham Last</string>
-    <string name="check_latest_lottery_results_and_number_combinations">Check latest lottery results and number combinations</string>
+    <string name="check_latest_lottery_results_and_first_prize_last_digit">Check latest lottery results and first prize last digit</string>
     <string name="share_app">Share App</string>
     <!-- Home Screen -->
     <string name="first_prize_jodi">First Prize Last Jodi Number</string>
