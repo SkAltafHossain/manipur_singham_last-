@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.home
+package com.altaf.manipursinghamlast.ui.home
 
 import android.os.Bundle
 import android.util.Log
@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.altaf.manipursingham.R
-import com.altaf.manipursingham.common.base.BaseFragment
-import com.altaf.manipursingham.common.extension.navigateWithAnimation
-import com.altaf.manipursingham.common.extension.shareApp
-import com.altaf.manipursingham.databinding.FragmentHomeBinding
-import com.altaf.manipursingham.ui.home.viewmodel.HomeEvent
+import com.altaf.manipursinghamlast.R
+import com.altaf.manipursinghamlast.common.base.BaseFragment
+import com.altaf.manipursinghamlast.common.extension.navigateWithAnimation
+import com.altaf.manipursinghamlast.common.extension.shareApp
+import com.altaf.manipursinghamlast.databinding.FragmentHomeBinding
+import com.altaf.manipursinghamlast.ui.home.viewmodel.HomeEvent
 import dagger.hilt.android.AndroidEntryPoint
-import com.altaf.manipursingham.ui.home.viewmodel.HomeViewModel
+import com.altaf.manipursinghamlast.ui.home.viewmodel.HomeViewModel
 import kotlinx.coroutines.launch
 
 

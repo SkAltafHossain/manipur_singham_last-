@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.data.remote.model
+package com.altaf.manipursinghamlast.data.remote.model
 
-import com.altaf.manipursingham.data.remote.dto.LatestResultPdfItemDto
+import com.altaf.manipursinghamlast.data.remote.dto.LatestResultPdfItemDto
 
 data class LatestResultsPdfResponse(
     val status: String,

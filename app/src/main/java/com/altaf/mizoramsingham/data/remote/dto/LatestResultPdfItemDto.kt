@@ -1,8 +1,8 @@
-package com.altaf.manipursingham.data.remote.dto
+package com.altaf.manipursinghamlast.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
-import com.altaf.manipursingham.BuildConfig
-import com.altaf.manipursingham.domain.model.LatestResultPdf
+import com.altaf.manipursinghamlast.BuildConfig
+import com.altaf.manipursinghamlast.domain.model.LatestResultPdf
 
 data class LatestResultPdfItemDto(
     @SerializedName("uniqcode")

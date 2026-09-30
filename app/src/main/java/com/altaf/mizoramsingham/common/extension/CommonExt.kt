@@ -1,11 +1,11 @@
-package com.altaf.manipursingham.common.extension
+package com.altaf.manipursinghamlast.common.extension
 
 import androidx.annotation.AnimRes
 import androidx.annotation.AnimatorRes
 import androidx.navigation.NavController
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.altaf.manipursingham.R
+import com.altaf.manipursinghamlast.R
 import org.json.JSONArray
 
 

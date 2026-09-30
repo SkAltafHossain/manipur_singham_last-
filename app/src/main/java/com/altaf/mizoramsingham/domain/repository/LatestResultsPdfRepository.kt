@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.domain.repository
+package com.altaf.manipursinghamlast.domain.repository
 
-import com.altaf.manipursingham.domain.model.LatestResultPdf
+import com.altaf.manipursinghamlast.domain.model.LatestResultPdf
 
 interface LatestResultsPdfRepository {
     suspend fun getLatestResultsPdf(): List<LatestResultPdf>

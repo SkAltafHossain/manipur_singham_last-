@@ -1,7 +1,7 @@
-package com.altaf.manipursingham.domain.mapper
+package com.altaf.manipursinghamlast.domain.mapper
 
-import com.altaf.manipursingham.domain.model.FirstPrizeJodi
-import com.altaf.manipursingham.data.remote.dto.FirstPrizeJodiDto
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeJodi
+import com.altaf.manipursinghamlast.data.remote.dto.FirstPrizeJodiDto
 import javax.inject.Inject
 
 interface FirstPrizeJodiMapper {

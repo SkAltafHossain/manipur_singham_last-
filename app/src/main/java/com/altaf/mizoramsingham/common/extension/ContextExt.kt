@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.common.extension
+package com.altaf.manipursinghamlast.common.extension
 
 import android.content.ActivityNotFoundException
 import android.content.ClipData
@@ -11,7 +11,7 @@ import android.net.ConnectivityManager
 import android.net.Uri
 import android.os.Build
 import android.text.SpannableString
-import com.altaf.manipursingham.BuildConfig
+import com.altaf.manipursinghamlast.BuildConfig
 
 fun Context.shareApp(){
     try {

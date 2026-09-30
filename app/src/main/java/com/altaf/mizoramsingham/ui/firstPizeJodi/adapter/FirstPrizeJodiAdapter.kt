@@ -1,13 +1,13 @@
-package com.altaf.manipursingham.ui.firstPizeJodi.adapter
+package com.altaf.manipursinghamlast.ui.firstPizeJodi.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.altaf.manipursingham.databinding.ItemFirstPrizeHeaderBinding
-import com.altaf.manipursingham.databinding.ItemFirstPrizeJodiBinding
-import com.altaf.manipursingham.domain.model.FirstPrizeJodi
+import com.altaf.manipursinghamlast.databinding.ItemFirstPrizeHeaderBinding
+import com.altaf.manipursinghamlast.databinding.ItemFirstPrizeJodiBinding
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeJodi
 
 private const val TYPE_HEADER = 0
 private const val TYPE_ITEM = 1

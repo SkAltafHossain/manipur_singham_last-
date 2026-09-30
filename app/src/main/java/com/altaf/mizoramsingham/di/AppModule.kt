@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.di
+package com.altaf.manipursinghamlast.di
 
 import android.content.Context
 import android.content.SharedPreferences

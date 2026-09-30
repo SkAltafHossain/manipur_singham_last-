@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.domain.usecase.numberCombination
+package com.altaf.manipursinghamlast.domain.usecase.numberCombination
 
 interface NumberCombinationUseCase {
 

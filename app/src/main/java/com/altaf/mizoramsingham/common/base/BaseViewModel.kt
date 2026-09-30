@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.common.base
+package com.altaf.manipursinghamlast.common.base
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

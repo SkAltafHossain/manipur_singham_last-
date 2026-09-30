@@ -1,8 +1,8 @@
-package com.altaf.manipursingham.ui.numberCombination.viewmodel
+package com.altaf.manipursinghamlast.ui.numberCombination.viewmodel
 
 import androidx.lifecycle.viewModelScope
-import com.altaf.manipursingham.common.base.BaseViewModel
-import com.altaf.manipursingham.domain.usecase.numberCombination.NumberCombinationUseCase
+import com.altaf.manipursinghamlast.common.base.BaseViewModel
+import com.altaf.manipursinghamlast.domain.usecase.numberCombination.NumberCombinationUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

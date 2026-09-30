@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.domain.model
+package com.altaf.manipursinghamlast.domain.model
 
 data class LatestResultPdf(
     val uniqcode: String,

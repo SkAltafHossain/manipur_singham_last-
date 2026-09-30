@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.firstPizeJodi
+package com.altaf.manipursinghamlast.ui.firstPizeJodi
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.altaf.manipursingham.R
-import com.altaf.manipursingham.common.base.BaseFragment
-import com.altaf.manipursingham.common.extension.showErrorSnackBar
-import com.altaf.manipursingham.databinding.FragmentFirstPrizeJodiBinding
-import com.altaf.manipursingham.ui.firstPizeJodi.adapter.FirstPrizeJodiAdapter
-import com.altaf.manipursingham.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
-import com.altaf.manipursingham.ui.firstPizeJodi.viewmodel.FirstPrizeJodiState
-import com.altaf.manipursingham.ui.firstPizeJodi.viewmodel.FirstPrizeJodiViewModel
+import com.altaf.manipursinghamlast.R
+import com.altaf.manipursinghamlast.common.base.BaseFragment
+import com.altaf.manipursinghamlast.common.extension.showErrorSnackBar
+import com.altaf.manipursinghamlast.databinding.FragmentFirstPrizeJodiBinding
+import com.altaf.manipursinghamlast.ui.firstPizeJodi.adapter.FirstPrizeJodiAdapter
+import com.altaf.manipursinghamlast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiEvent
+import com.altaf.manipursinghamlast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiState
+import com.altaf.manipursinghamlast.ui.firstPizeJodi.viewmodel.FirstPrizeJodiViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

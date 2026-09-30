@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.ui.showResult.viewmodel
+package com.altaf.manipursinghamlast.ui.showResult.viewmodel
 
-import com.altaf.manipursingham.domain.model.LatestResultPdf
+import com.altaf.manipursinghamlast.domain.model.LatestResultPdf
 
 /**
  * UI State for ShowResult screen

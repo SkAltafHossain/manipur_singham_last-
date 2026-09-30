@@ -17,7 +17,7 @@
 
         <variable
             name="viewModelData"
-            type="com.altaf.manipursingham.ui.home.viewmodel.HomeViewModel" />
+            type="com.altaf.manipursinghamlast.ui.home.viewmodel.HomeViewModel" />
 
         <variable
             name="cardType"

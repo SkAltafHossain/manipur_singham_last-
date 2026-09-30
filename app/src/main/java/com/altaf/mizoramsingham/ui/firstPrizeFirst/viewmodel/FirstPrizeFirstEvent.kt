@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.firstPrizeFirst.viewmodel
+package com.altaf.manipursinghamlast.ui.firstPrizeFirst.viewmodel
 
 // Sealed class for one-time events in First Prize First screen
 sealed class FirstPrizeFirstEvent {

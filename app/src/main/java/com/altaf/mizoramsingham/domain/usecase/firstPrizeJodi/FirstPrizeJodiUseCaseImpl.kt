@@ -1,8 +1,8 @@
-package com.altaf.manipursingham.domain.usecase.firstPrizeJodi
+package com.altaf.manipursinghamlast.domain.usecase.firstPrizeJodi
 
-import com.altaf.manipursingham.common.result.NetworkResult
-import com.altaf.manipursingham.domain.model.FirstPrizeJodi
-import com.altaf.manipursingham.domain.repository.FirstPrizeJodiRepository
+import com.altaf.manipursinghamlast.common.result.NetworkResult
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeJodi
+import com.altaf.manipursinghamlast.domain.repository.FirstPrizeJodiRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

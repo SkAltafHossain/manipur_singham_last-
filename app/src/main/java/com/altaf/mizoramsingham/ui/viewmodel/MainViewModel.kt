@@ -1,7 +1,7 @@
-package com.altaf.manipursingham.ui.viewmodel
+package com.altaf.manipursinghamlast.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import com.altaf.manipursingham.common.base.BaseViewModel
+import com.altaf.manipursinghamlast.common.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

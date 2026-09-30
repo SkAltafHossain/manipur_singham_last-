@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.common.result
+package com.altaf.manipursinghamlast.common.result
 
 sealed class NetworkResult<out T> {
     data class Success<T>(val data: T) : NetworkResult<T>()

@@ -1,9 +1,9 @@
-package com.altaf.manipursingham.data.repository
+package com.altaf.manipursinghamlast.data.repository
 
-import com.altaf.manipursingham.data.remote.api.DataSource
-import com.altaf.manipursingham.domain.mapper.FirstPrizeFirstMapper
-import com.altaf.manipursingham.domain.model.FirstPrizeFirst
-import com.altaf.manipursingham.domain.repository.FirstPrizeFirstRepository
+import com.altaf.manipursinghamlast.data.remote.api.DataSource
+import com.altaf.manipursinghamlast.domain.mapper.FirstPrizeFirstMapper
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeFirst
+import com.altaf.manipursinghamlast.domain.repository.FirstPrizeFirstRepository
 import javax.inject.Inject
 
 class FirstPrizeFirstRepositoryImpl @Inject constructor(

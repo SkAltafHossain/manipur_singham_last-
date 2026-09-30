@@ -1,11 +1,11 @@
-package com.altaf.manipursingham.ui.firstPizeJodi.viewmodel
+package com.altaf.manipursinghamlast.ui.firstPizeJodi.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.viewModelScope
-import com.altaf.manipursingham.common.base.BaseViewModel
-import com.altaf.manipursingham.common.extension.toSimpleJson
-import com.altaf.manipursingham.common.result.NetworkResult
-import com.altaf.manipursingham.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
+import com.altaf.manipursinghamlast.common.base.BaseViewModel
+import com.altaf.manipursinghamlast.common.extension.toSimpleJson
+import com.altaf.manipursinghamlast.common.result.NetworkResult
+import com.altaf.manipursinghamlast.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

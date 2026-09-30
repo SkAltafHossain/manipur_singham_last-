@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.showResult.viewmodel
+package com.altaf.manipursinghamlast.ui.showResult.viewmodel
 
 // Sealed class for one-time events in ShowResult screen
 sealed class ShowResultEvent {

@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.altaf.manipursingham.ui.home.viewmodel.HomeViewModel" />
+            type="com.altaf.manipursinghamlast.ui.home.viewmodel.HomeViewModel" />
     </data>
 
 

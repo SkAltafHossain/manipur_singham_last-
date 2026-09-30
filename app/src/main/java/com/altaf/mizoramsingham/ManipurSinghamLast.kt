@@ -1,9 +1,9 @@
-package com.altaf.manipursingham
+package com.altaf.manipursinghamlast
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class KeralaLastApp : Application()
+class ManipurSinghamLast : Application()
 
 

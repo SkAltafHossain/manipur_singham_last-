@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.numberCombination.viewmodel
+package com.altaf.manipursinghamlast.ui.numberCombination.viewmodel
 
 /**
  * UI State for Number Combination screen

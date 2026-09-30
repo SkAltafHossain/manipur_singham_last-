@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.showResult
+package com.altaf.manipursinghamlast.ui.showResult
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,15 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
-import com.altaf.manipursingham.common.base.BaseFragment
-import com.altaf.manipursingham.common.extension.disable
-import com.altaf.manipursingham.common.extension.enable
-import com.altaf.manipursingham.common.extension.showErrorSnackBar
-import com.altaf.manipursingham.databinding.FragmentShowResultBinding
-import com.altaf.manipursingham.domain.model.LatestResultPdf
-import com.altaf.manipursingham.ui.showResult.viewmodel.ShowResultEvent
-import com.altaf.manipursingham.ui.showResult.viewmodel.ShowResultState
-import com.altaf.manipursingham.ui.showResult.viewmodel.ShowResultViewModel
+import com.altaf.manipursinghamlast.common.base.BaseFragment
+import com.altaf.manipursinghamlast.common.extension.disable
+import com.altaf.manipursinghamlast.common.extension.enable
+import com.altaf.manipursinghamlast.common.extension.showErrorSnackBar
+import com.altaf.manipursinghamlast.databinding.FragmentShowResultBinding
+import com.altaf.manipursinghamlast.domain.model.LatestResultPdf
+import com.altaf.manipursinghamlast.ui.showResult.viewmodel.ShowResultEvent
+import com.altaf.manipursinghamlast.ui.showResult.viewmodel.ShowResultState
+import com.altaf.manipursinghamlast.ui.showResult.viewmodel.ShowResultViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

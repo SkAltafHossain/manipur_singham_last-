@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.ui.firstPrizeFirst.viewmodel
+package com.altaf.manipursinghamlast.ui.firstPrizeFirst.viewmodel
 
-import com.altaf.manipursingham.domain.model.FirstPrizeFirst
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeFirst
 
 /**
  * UI State for First Prize First screen

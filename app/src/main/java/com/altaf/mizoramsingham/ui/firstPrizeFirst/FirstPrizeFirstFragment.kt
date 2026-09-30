@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.firstPrizeFirst
+package com.altaf.manipursinghamlast.ui.firstPrizeFirst
 
 import android.os.Bundle
 import android.text.Editable
@@ -10,14 +10,14 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.altaf.manipursingham.R
-import com.altaf.manipursingham.common.base.BaseFragment
-import com.altaf.manipursingham.common.extension.showErrorSnackBar
-import com.altaf.manipursingham.databinding.FragmentFirstPrizeFirstBinding
-import com.altaf.manipursingham.ui.firstPrizeFirst.adapter.FirstPrizeFirstAdapter
-import com.altaf.manipursingham.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstEvent
-import com.altaf.manipursingham.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstState
-import com.altaf.manipursingham.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstViewModel
+import com.altaf.manipursinghamlast.R
+import com.altaf.manipursinghamlast.common.base.BaseFragment
+import com.altaf.manipursinghamlast.common.extension.showErrorSnackBar
+import com.altaf.manipursinghamlast.databinding.FragmentFirstPrizeFirstBinding
+import com.altaf.manipursinghamlast.ui.firstPrizeFirst.adapter.FirstPrizeFirstAdapter
+import com.altaf.manipursinghamlast.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstEvent
+import com.altaf.manipursinghamlast.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstState
+import com.altaf.manipursinghamlast.ui.firstPrizeFirst.viewmodel.FirstPrizeFirstViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

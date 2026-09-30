@@ -1,11 +1,11 @@
-package com.altaf.manipursingham.di
+package com.altaf.manipursinghamlast.di
 
-import com.altaf.manipursingham.domain.mapper.FirstPrizeFirstMapper
-import com.altaf.manipursingham.domain.mapper.FirstPrizeFirstMapperImpl
-import com.altaf.manipursingham.domain.mapper.FirstPrizeJodiMapper
-import com.altaf.manipursingham.domain.mapper.FirstPrizeJodiMapperImpl
-import com.altaf.manipursingham.domain.mapper.LatestResultsPdfMapper
-import com.altaf.manipursingham.domain.mapper.LatestResultsPdfMapperImpl
+import com.altaf.manipursinghamlast.domain.mapper.FirstPrizeFirstMapper
+import com.altaf.manipursinghamlast.domain.mapper.FirstPrizeFirstMapperImpl
+import com.altaf.manipursinghamlast.domain.mapper.FirstPrizeJodiMapper
+import com.altaf.manipursinghamlast.domain.mapper.FirstPrizeJodiMapperImpl
+import com.altaf.manipursinghamlast.domain.mapper.LatestResultsPdfMapper
+import com.altaf.manipursinghamlast.domain.mapper.LatestResultsPdfMapperImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

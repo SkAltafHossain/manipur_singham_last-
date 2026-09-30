@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.home.viewmodel
+package com.altaf.manipursinghamlast.ui.home.viewmodel
 
 /**
  * UI State for Home screen

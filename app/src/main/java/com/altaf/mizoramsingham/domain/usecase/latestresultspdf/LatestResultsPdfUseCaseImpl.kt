@@ -1,8 +1,8 @@
-package com.altaf.manipursingham.domain.usecase.latestresultspdf
+package com.altaf.manipursinghamlast.domain.usecase.latestresultspdf
 
-import com.altaf.manipursingham.common.result.NetworkResult
-import com.altaf.manipursingham.domain.model.LatestResultPdf
-import com.altaf.manipursingham.domain.repository.LatestResultsPdfRepository
+import com.altaf.manipursinghamlast.common.result.NetworkResult
+import com.altaf.manipursinghamlast.domain.model.LatestResultPdf
+import com.altaf.manipursinghamlast.domain.repository.LatestResultsPdfRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

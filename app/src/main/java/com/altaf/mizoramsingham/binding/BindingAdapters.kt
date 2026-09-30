@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.binding
+package com.altaf.manipursinghamlast.binding
 import android.text.Html
 import android.text.method.LinkMovementMethod
 import android.widget.ImageView

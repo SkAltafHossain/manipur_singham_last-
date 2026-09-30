@@ -1,11 +1,11 @@
-package com.altaf.manipursingham.ui.numberCombination.adapter
+package com.altaf.manipursinghamlast.ui.numberCombination.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.altaf.manipursingham.databinding.ItemNumberCombinationBinding
+import com.altaf.manipursinghamlast.databinding.ItemNumberCombinationBinding
 
 class NumberCombinationAdapter : ListAdapter<String, NumberCombinationAdapter.NumberCombinationViewHolder>(DiffCallback) {
 

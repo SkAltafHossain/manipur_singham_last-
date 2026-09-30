@@ -1,7 +1,7 @@
-package com.altaf.manipursingham.data.remote.dto
+package com.altaf.manipursinghamlast.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
-import com.altaf.manipursingham.domain.model.FirstPrizeJodi
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeJodi
 
 data class FirstPrizeJodiDto(
     @SerializedName("date")

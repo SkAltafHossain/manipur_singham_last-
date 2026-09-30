@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.common.base
+package com.altaf.manipursinghamlast.common.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

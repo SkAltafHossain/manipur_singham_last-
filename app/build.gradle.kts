@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.altaf.manipursingham"
+    namespace = "com.altaf.manipursinghamlast"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.altaf.manipursingham"
+        applicationId = "com.altaf.manipursinghamlast"
         minSdk = 24
         targetSdk = 36
         versionCode = 3

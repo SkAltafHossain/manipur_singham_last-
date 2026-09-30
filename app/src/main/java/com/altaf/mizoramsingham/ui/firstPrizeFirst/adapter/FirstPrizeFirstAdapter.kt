@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.firstPrizeFirst.adapter
+package com.altaf.manipursinghamlast.ui.firstPrizeFirst.adapter
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -7,10 +7,10 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.altaf.manipursingham.R
-import com.altaf.manipursingham.databinding.ItemFirstPrizeFirstBinding
-import com.altaf.manipursingham.databinding.ItemFirstPrizeHeaderBinding
-import com.altaf.manipursingham.domain.model.FirstPrizeFirst
+import com.altaf.manipursinghamlast.R
+import com.altaf.manipursinghamlast.databinding.ItemFirstPrizeFirstBinding
+import com.altaf.manipursinghamlast.databinding.ItemFirstPrizeHeaderBinding
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeFirst
 
 private const val TYPE_HEADER = 0
 private const val TYPE_ITEM = 1

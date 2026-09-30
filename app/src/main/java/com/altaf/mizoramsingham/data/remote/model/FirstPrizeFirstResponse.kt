@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.data.remote.model
+package com.altaf.manipursinghamlast.data.remote.model
 
-import com.altaf.manipursingham.data.remote.dto.FirstPrizeFirstDto
+import com.altaf.manipursinghamlast.data.remote.dto.FirstPrizeFirstDto
 
 data class FirstPrizeFirstResponse(
     val status: String,

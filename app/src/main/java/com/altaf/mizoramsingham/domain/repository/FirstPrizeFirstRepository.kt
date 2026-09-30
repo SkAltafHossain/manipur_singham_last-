@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.domain.repository
+package com.altaf.manipursinghamlast.domain.repository
 
-import com.altaf.manipursingham.domain.model.FirstPrizeFirst
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeFirst
 
 interface FirstPrizeFirstRepository {
     suspend fun getFirstPrizeFirst(): List<FirstPrizeFirst>

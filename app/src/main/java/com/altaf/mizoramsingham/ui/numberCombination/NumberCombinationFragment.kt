@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.numberCombination
+package com.altaf.manipursinghamlast.ui.numberCombination
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,13 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.altaf.manipursingham.R
-import com.altaf.manipursingham.common.base.BaseFragment
-import com.altaf.manipursingham.databinding.FragmentNumberCombinationBinding
-import com.altaf.manipursingham.ui.numberCombination.adapter.NumberCombinationAdapter
-import com.altaf.manipursingham.ui.numberCombination.viewmodel.NumberCombinationViewModel
-import com.altaf.manipursingham.ui.numberCombination.viewmodel.NumberCombinationEvent
-import com.altaf.manipursingham.ui.numberCombination.viewmodel.NumberCombinationState
+import com.altaf.manipursinghamlast.R
+import com.altaf.manipursinghamlast.common.base.BaseFragment
+import com.altaf.manipursinghamlast.databinding.FragmentNumberCombinationBinding
+import com.altaf.manipursinghamlast.ui.numberCombination.adapter.NumberCombinationAdapter
+import com.altaf.manipursinghamlast.ui.numberCombination.viewmodel.NumberCombinationViewModel
+import com.altaf.manipursinghamlast.ui.numberCombination.viewmodel.NumberCombinationEvent
+import com.altaf.manipursinghamlast.ui.numberCombination.viewmodel.NumberCombinationState
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

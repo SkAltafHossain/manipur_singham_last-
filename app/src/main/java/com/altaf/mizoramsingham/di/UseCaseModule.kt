@@ -1,13 +1,13 @@
-package com.altaf.manipursingham.di
+package com.altaf.manipursinghamlast.di
 
-import com.altaf.manipursingham.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCase
-import com.altaf.manipursingham.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCaseImpl
-import com.altaf.manipursingham.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
-import com.altaf.manipursingham.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCaseImpl
-import com.altaf.manipursingham.domain.usecase.latestresultspdf.LatestResultsPdfUseCase
-import com.altaf.manipursingham.domain.usecase.latestresultspdf.LatestResultsPdfUseCaseImpl
-import com.altaf.manipursingham.domain.usecase.numberCombination.NumberCombinationUseCase
-import com.altaf.manipursingham.domain.usecase.numberCombination.NumberCombinationUseCaseImpl
+import com.altaf.manipursinghamlast.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCase
+import com.altaf.manipursinghamlast.domain.usecase.firstPrizeFast.FirstPrizeFirstUseCaseImpl
+import com.altaf.manipursinghamlast.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCase
+import com.altaf.manipursinghamlast.domain.usecase.firstPrizeJodi.FirstPrizeJodiUseCaseImpl
+import com.altaf.manipursinghamlast.domain.usecase.latestresultspdf.LatestResultsPdfUseCase
+import com.altaf.manipursinghamlast.domain.usecase.latestresultspdf.LatestResultsPdfUseCaseImpl
+import com.altaf.manipursinghamlast.domain.usecase.numberCombination.NumberCombinationUseCase
+import com.altaf.manipursinghamlast.domain.usecase.numberCombination.NumberCombinationUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

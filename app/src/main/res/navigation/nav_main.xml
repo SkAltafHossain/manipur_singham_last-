@@ -6,27 +6,27 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.altaf.manipursingham.ui.home.HomeFragment"
+        android:name="com.altaf.manipursinghamlast.ui.home.HomeFragment"
         android:label="Home" />
 
     <fragment
         android:id="@+id/lastJodiNumberFragment"
-        android:name="com.altaf.manipursingham.ui.firstPizeJodi.FirstPrizeJodiFragment"
+        android:name="com.altaf.manipursinghamlast.ui.firstPizeJodi.FirstPrizeJodiFragment"
         android:label="Last Jodi Number" />
 
     <fragment
         android:id="@+id/lastNumberFragment"
-        android:name="com.altaf.manipursingham.ui.firstPrizeFirst.FirstPrizeFirstFragment"
+        android:name="com.altaf.manipursinghamlast.ui.firstPrizeFirst.FirstPrizeFirstFragment"
         android:label="Last Number" />
 
     <fragment
         android:id="@+id/numberCombinationFragment"
-        android:name="com.altaf.manipursingham.ui.numberCombination.NumberCombinationFragment"
+        android:name="com.altaf.manipursinghamlast.ui.numberCombination.NumberCombinationFragment"
         android:label="Number Combination" />
 
     <fragment
         android:id="@+id/showResultFragment"
-        android:name="com.altaf.manipursingham.ui.showResult.ShowResultFragment"
+        android:name="com.altaf.manipursinghamlast.ui.showResult.ShowResultFragment"
         android:label="Show Result" />
 
 </navigation>

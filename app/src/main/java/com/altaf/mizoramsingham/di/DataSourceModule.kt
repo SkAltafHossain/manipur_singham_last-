@@ -1,8 +1,8 @@
-package com.altaf.manipursingham.di
+package com.altaf.manipursinghamlast.di
 
-import com.altaf.manipursingham.data.remote.api.ApiService
-import com.altaf.manipursingham.data.remote.api.DataSource
-import com.altaf.manipursingham.data.remote.api.DataSourceImpl
+import com.altaf.manipursinghamlast.data.remote.api.ApiService
+import com.altaf.manipursinghamlast.data.remote.api.DataSource
+import com.altaf.manipursinghamlast.data.remote.api.DataSourceImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

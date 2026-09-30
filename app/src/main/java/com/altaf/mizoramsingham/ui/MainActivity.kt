@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui
+package com.altaf.manipursinghamlast.ui
 
 import android.content.Context
 import android.content.res.Resources
@@ -11,12 +11,12 @@ import android.view.WindowInsets
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
-import com.altaf.manipursingham.R
-import com.altaf.manipursingham.common.base.BaseActivity
-import com.altaf.manipursingham.common.extension.gone
-import com.altaf.manipursingham.common.extension.visible
-import com.altaf.manipursingham.databinding.ActivityMainBinding
-import com.altaf.manipursingham.ui.viewmodel.MainViewModel
+import com.altaf.manipursinghamlast.R
+import com.altaf.manipursinghamlast.common.base.BaseActivity
+import com.altaf.manipursinghamlast.common.extension.gone
+import com.altaf.manipursinghamlast.common.extension.visible
+import com.altaf.manipursinghamlast.databinding.ActivityMainBinding
+import com.altaf.manipursinghamlast.ui.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

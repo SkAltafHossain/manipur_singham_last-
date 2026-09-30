@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.viewmodel
+package com.altaf.manipursinghamlast.ui.viewmodel
 
 // Example data and event classes
 sealed class MainData {

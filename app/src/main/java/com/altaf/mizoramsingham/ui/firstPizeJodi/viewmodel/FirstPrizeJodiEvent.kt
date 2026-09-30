@@ -1,4 +1,4 @@
-package com.altaf.manipursingham.ui.firstPizeJodi.viewmodel
+package com.altaf.manipursinghamlast.ui.firstPizeJodi.viewmodel
 
 /**
  * Sealed class for one-time events in First Prize Jodi screen

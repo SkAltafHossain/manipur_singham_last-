@@ -1,9 +1,9 @@
-package com.altaf.manipursingham.data.repository
+package com.altaf.manipursinghamlast.data.repository
 
-import com.altaf.manipursingham.data.remote.api.DataSource
-import com.altaf.manipursingham.domain.mapper.LatestResultsPdfMapper
-import com.altaf.manipursingham.domain.model.LatestResultPdf
-import com.altaf.manipursingham.domain.repository.LatestResultsPdfRepository
+import com.altaf.manipursinghamlast.data.remote.api.DataSource
+import com.altaf.manipursinghamlast.domain.mapper.LatestResultsPdfMapper
+import com.altaf.manipursinghamlast.domain.model.LatestResultPdf
+import com.altaf.manipursinghamlast.domain.repository.LatestResultsPdfRepository
 import javax.inject.Inject
 
 class LatestResultsPdfRepositoryImpl @Inject constructor(

@@ -1,8 +1,8 @@
-package com.altaf.manipursingham.data.remote.api
+package com.altaf.manipursinghamlast.data.remote.api
 
-import com.altaf.manipursingham.data.remote.model.FirstPrizeFirstResponse
-import com.altaf.manipursingham.data.remote.model.FirstPrizeJodiResponse
-import com.altaf.manipursingham.data.remote.model.LatestResultsPdfResponse
+import com.altaf.manipursinghamlast.data.remote.model.FirstPrizeFirstResponse
+import com.altaf.manipursinghamlast.data.remote.model.FirstPrizeJodiResponse
+import com.altaf.manipursinghamlast.data.remote.model.LatestResultsPdfResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

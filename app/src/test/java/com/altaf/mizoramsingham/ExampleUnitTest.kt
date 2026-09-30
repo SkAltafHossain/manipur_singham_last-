@@ -1,4 +1,4 @@
-package com.altaf.manipursingham
+package com.altaf.manipursinghamlast
 
 import org.junit.Test
 

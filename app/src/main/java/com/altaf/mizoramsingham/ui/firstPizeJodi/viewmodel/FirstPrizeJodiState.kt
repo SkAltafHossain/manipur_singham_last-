@@ -1,6 +1,6 @@
-package com.altaf.manipursingham.ui.firstPizeJodi.viewmodel
+package com.altaf.manipursinghamlast.ui.firstPizeJodi.viewmodel
 
-import com.altaf.manipursingham.domain.model.FirstPrizeJodi
+import com.altaf.manipursinghamlast.domain.model.FirstPrizeJodi
 
 /**
  * UI State for First Prize Jodi screen

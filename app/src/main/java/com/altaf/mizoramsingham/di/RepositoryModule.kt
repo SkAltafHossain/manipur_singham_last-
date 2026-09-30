@@ -1,11 +1,11 @@
-package com.altaf.manipursingham.di
+package com.altaf.manipursinghamlast.di
 
-import com.altaf.manipursingham.data.repository.FirstPrizeFirstRepositoryImpl
-import com.altaf.manipursingham.data.repository.FirstPrizeJodiRepositoryImpl
-import com.altaf.manipursingham.data.repository.LatestResultsPdfRepositoryImpl
-import com.altaf.manipursingham.domain.repository.FirstPrizeFirstRepository
-import com.altaf.manipursingham.domain.repository.FirstPrizeJodiRepository
-import com.altaf.manipursingham.domain.repository.LatestResultsPdfRepository
+import com.altaf.manipursinghamlast.data.repository.FirstPrizeFirstRepositoryImpl
+import com.altaf.manipursinghamlast.data.repository.FirstPrizeJodiRepositoryImpl
+import com.altaf.manipursinghamlast.data.repository.LatestResultsPdfRepositoryImpl
+import com.altaf.manipursinghamlast.domain.repository.FirstPrizeFirstRepository
+import com.altaf.manipursinghamlast.domain.repository.FirstPrizeJodiRepository
+import com.altaf.manipursinghamlast.domain.repository.LatestResultsPdfRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
